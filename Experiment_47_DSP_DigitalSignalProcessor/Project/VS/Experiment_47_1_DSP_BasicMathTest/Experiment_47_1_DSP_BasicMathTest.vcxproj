@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|VisualGDB">
+      <Configuration>Debug</Configuration>
+      <Platform>VisualGDB</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|VisualGDB">
+      <Configuration>Release</Configuration>
+      <Platform>VisualGDB</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{3B325062-41D8-40DF-ADBC-85F905294075}</ProjectGuid>
+    <BSP_ID>KEIL:Keil/STM32F4xx_DFP</BSP_ID>
+    <BSP_VERSION>2.6.0</BSP_VERSION>
+    <InPlaceBSPSubdir />
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <MCUPropertyListFile>$(ProjectDir)mcu.props</MCUPropertyListFile>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <MCUPropertyListFile>$(ProjectDir)mcu.props</MCUPropertyListFile>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <GNUConfigurationType>Debug</GNUConfigurationType>
+    <ToolchainID>com.sysprogs.toolchains.nongnu.armcc</ToolchainID>
+    <ToolchainVersion>5.x//r1</ToolchainVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <ToolchainID>com.sysprogs.toolchains.nongnu.armcc</ToolchainID>
+    <ToolchainVersion>5.x//r1</ToolchainVersion>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\Experiment_47_1_DSP_BasicMathTest\CORE;..\..\..\Experiment_47_1_DSP_BasicMathTest\SYSTEM\delay;..\..\..\Experiment_47_1_DSP_BasicMathTest\SYSTEM\sys;..\..\..\Experiment_47_1_DSP_BasicMathTest\SYSTEM\usart;..\..\..\Experiment_47_1_DSP_BasicMathTest\USER;..\..\..\Experiment_47_1_DSP_BasicMathTest\HARDWARE\LED;..\..\..\Experiment_47_1_DSP_BasicMathTest\HARDWARE\LCD;..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\inc;..\..\..\Experiment_47_1_DSP_BasicMathTest\HARDWARE\KEY;..\..\..\Experiment_47_1_DSP_BasicMathTest\HARDWARE\TIMER;..\..\..\Experiment_47_1_DSP_BasicMathTest\DSP_LIB;..\..\..\Experiment_47_1_DSP_BasicMathTest\DSP_LIB\Include;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>STM32F40_41xxx;USE_STDPERIPH_DRIVER;ARM_MATH_CM4;__CC_ARM;ARM_MATH_MATRIX_CHECK;ARM_MATH_ROUNDING;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions />
+      <CLanguageStandard />
+      <CPPLanguageStandard />
+    </ClCompile>
+    <Link>
+      <AdditionalLinkerInputs>%(Link.AdditionalLinkerInputs)</AdditionalLinkerInputs>
+      <AdditionalOptions />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\Experiment_47_1_DSP_BasicMathTest\CORE;..\..\..\Experiment_47_1_DSP_BasicMathTest\SYSTEM\delay;..\..\..\Experiment_47_1_DSP_BasicMathTest\SYSTEM\sys;..\..\..\Experiment_47_1_DSP_BasicMathTest\SYSTEM\usart;..\..\..\Experiment_47_1_DSP_BasicMathTest\USER;..\..\..\Experiment_47_1_DSP_BasicMathTest\HARDWARE\LED;..\..\..\Experiment_47_1_DSP_BasicMathTest\HARDWARE\LCD;..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\inc;..\..\..\Experiment_47_1_DSP_BasicMathTest\HARDWARE\KEY;..\..\..\Experiment_47_1_DSP_BasicMathTest\HARDWARE\TIMER;..\..\..\Experiment_47_1_DSP_BasicMathTest\DSP_LIB;..\..\..\Experiment_47_1_DSP_BasicMathTest\DSP_LIB\Include;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>STM32F40_41xxx;USE_STDPERIPH_DRIVER;ARM_MATH_CM4;__CC_ARM;ARM_MATH_MATRIX_CHECK;ARM_MATH_ROUNDING;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions />
+      <CLanguageStandard />
+      <CPPLanguageStandard />
+    </ClCompile>
+    <Link>
+      <AdditionalLinkerInputs>%(Link.AdditionalLinkerInputs)</AdditionalLinkerInputs>
+      <AdditionalOptions />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\USER\main.c" />
+    <ClCompile Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\USER\stm32f4xx_it.c" />
+    <ClCompile Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\USER\system_stm32f4xx.c" />
+    <ClCompile Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\HARDWARE\LED\led.c" />
+    <ClCompile Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\HARDWARE\LCD\lcd.c" />
+    <ClCompile Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\HARDWARE\KEY\key.c" />
+    <ClCompile Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\HARDWARE\TIMER\timer.c" />
+    <ClCompile Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\SYSTEM\delay\delay.c" />
+    <ClCompile Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\SYSTEM\sys\sys.c" />
+    <ClCompile Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\SYSTEM\usart\usart.c" />
+    <ClCompile Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\CORE\startup_stm32f40_41xxx.s" />
+    <ClCompile Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\src\misc.c" />
+    <ClCompile Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\src\stm32f4xx_gpio.c" />
+    <ClCompile Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\src\stm32f4xx_fsmc.c" />
+    <ClCompile Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\src\stm32f4xx_rcc.c" />
+    <ClCompile Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\src\stm32f4xx_syscfg.c" />
+    <ClCompile Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\src\stm32f4xx_usart.c" />
+    <ClCompile Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\src\stm32f4xx_tim.c" />
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\CORE\core_cm4.h" />
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\CORE\core_cm4_simd.h" />
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\DSP_LIB\Include\arm_math.h" />
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\DSP_LIB\Include\core_cm0.h" />
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\DSP_LIB\Include\core_cm0plus.h" />
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\DSP_LIB\Include\core_cm3.h" />
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\DSP_LIB\Include\core_cm4.h" />
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\DSP_LIB\Include\core_cmFunc.h" />
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\DSP_LIB\Include\core_cmInstr.h" />
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\inc\misc.h" />
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\inc\stm32f4xx_adc.h" />
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\inc\stm32f4xx_can.h" />
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\inc\stm32f4xx_crc.h" />
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\inc\stm32f4xx_cryp.h" />
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\inc\stm32f4xx_dac.h" />
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\inc\stm32f4xx_dbgmcu.h" />
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\inc\stm32f4xx_dcmi.h" />
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\inc\stm32f4xx_dma.h" />
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\inc\stm32f4xx_dma2d.h" />
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\inc\stm32f4xx_exti.h" />
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\inc\stm32f4xx_flash.h" />
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\inc\stm32f4xx_flash_ramfunc.h" />
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\inc\stm32f4xx_fmc.h" />
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\inc\stm32f4xx_fsmc.h" />
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\inc\stm32f4xx_gpio.h" />
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\inc\stm32f4xx_hash.h" />
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\inc\stm32f4xx_i2c.h" />
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\inc\stm32f4xx_iwdg.h" />
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\inc\stm32f4xx_ltdc.h" />
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\inc\stm32f4xx_pwr.h" />
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\inc\stm32f4xx_rcc.h" />
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\inc\stm32f4xx_rng.h" />
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\inc\stm32f4xx_rtc.h" />
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\inc\stm32f4xx_sai.h" />
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\inc\stm32f4xx_sdio.h" />
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\inc\stm32f4xx_spi.h" />
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\inc\stm32f4xx_syscfg.h" />
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\inc\stm32f4xx_tim.h" />
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\inc\stm32f4xx_usart.h" />
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\inc\stm32f4xx_wwdg.h" />
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\HARDWARE\KEY\key.h" />
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\HARDWARE\LCD\FONT.H" />
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\HARDWARE\LCD\lcd.h" />
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\HARDWARE\LED\led.h" />
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\HARDWARE\TIMER\timer.h" />
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\SYSTEM\delay\delay.h" />
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\SYSTEM\sys\sys.h" />
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\SYSTEM\usart\usart.h" />
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\USER\stm32f4xx.h" />
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\USER\stm32f4xx_conf.h" />
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\USER\stm32f4xx_it.h" />
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\USER\system_stm32f4xx.h" />
+    <ClInclude Include="C:\Program Files (x86)\Sysprogs\VisualGDB\builtins_ia32.h" />
+    <ClInclude Include="C:\Program Files (x86)\Sysprogs\VisualGDB\gcc_compat.h" />
+    <ClInclude Include="G:\MDK\ARM\ARMCC\include\math.h" />
+    <ClInclude Include="G:\MDK\ARM\ARMCC\include\stdlib.h" />
+    <Library Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\DSP_LIB\arm_cortexM4lf_math.lib" />
+    <None Include="..\..\..\..\..\..\..\嵌入式学习\资料\探索者F4\探索者F4 视频盘(D盘)\第89讲 DSP测试实验\第89讲 DSP测试实验.ppt" />
+    <None Include="..\..\..\..\..\..\..\嵌入式学习\资料\探索者F4\探索者F4 视频盘(D盘)\第89讲 DSP测试实验\第89讲 DSP测试实验.rmvb" />
+    <None Include="mcu.props" />
+    <None Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\readme.txt" />
+    <ClInclude Include="$(BSP_ROOT)\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h" />
+    <None Include="Experiment_47_1_DSP_BasicMathTest-Debug.vgdbsettings" />
+    <None Include="Experiment_47_1_DSP_BasicMathTest-Release.vgdbsettings" />
+    <None Include="MCU.xml" />
+  </ItemGroup>
+</Project>

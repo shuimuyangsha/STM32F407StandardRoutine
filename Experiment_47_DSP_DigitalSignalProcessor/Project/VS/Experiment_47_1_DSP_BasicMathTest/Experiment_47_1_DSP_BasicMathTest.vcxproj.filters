@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{3fcc006b-318d-44ff-9c45-8f85868129c7}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header files">
+      <UniqueIdentifier>{7bbf1aff-a6b7-4e32-8f5e-67d7b70e6534}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource files">
+      <UniqueIdentifier>{60ed87fb-8d8a-48a2-8e26-f9aeb76e2723}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Source files\USER">
+      <UniqueIdentifier>{27f3dc8d-2150-489c-8330-5e4e3b7ca41c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\HARDWARE">
+      <UniqueIdentifier>{55757457-ce2e-427c-8d6a-67ad42afb7a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\SYSTEM">
+      <UniqueIdentifier>{32dd5697-83da-44b7-926a-b68704dd4a55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\CORE">
+      <UniqueIdentifier>{01a35c82-2055-46f8-981a-1b65dc98c79f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\FWLIB">
+      <UniqueIdentifier>{52cd1748-5800-4827-b18f-13c2efb1a702}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\DSP_LIB">
+      <UniqueIdentifier>{b8b3e394-f9c9-405e-ada4-a37abf77b7e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\README">
+      <UniqueIdentifier>{93aa23b6-b009-43e4-a470-c7e896db11d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files">
+      <UniqueIdentifier>{54c8adbf-d3ca-419a-8346-5743cb980ea7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\USER">
+      <UniqueIdentifier>{6034c575-cadf-451e-a50b-794e48509437}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\HARDWARE">
+      <UniqueIdentifier>{2784be43-dfe7-436e-a06e-c9089ea292d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\SYSTEM">
+      <UniqueIdentifier>{259dd186-a900-4132-bb04-d28e98c08fc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\CORE">
+      <UniqueIdentifier>{03359470-5445-44dd-b505-57467cfcc53c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\FWLIB">
+      <UniqueIdentifier>{acefc848-3a2b-420d-affb-e21b0282eee5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\DSP_LIB">
+      <UniqueIdentifier>{5a40e0d4-938c-4ad6-bae7-823d7b87efb6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\README">
+      <UniqueIdentifier>{a38ff612-8a45-452d-a0dd-1364a0aeb823}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files">
+      <UniqueIdentifier>{9af4d33d-24dd-4cb2-8eb4-e939005cae06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VisualGDB settings">
+      <UniqueIdentifier>{b005259a-c42c-4e2e-a911-72e267b63b8e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\USER\main.c">
+      <Filter>Source files\USER</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\USER\stm32f4xx_it.c">
+      <Filter>Source files\USER</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\USER\system_stm32f4xx.c">
+      <Filter>Source files\USER</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\HARDWARE\LED\led.c">
+      <Filter>Source files\HARDWARE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\HARDWARE\LCD\lcd.c">
+      <Filter>Source files\HARDWARE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\HARDWARE\KEY\key.c">
+      <Filter>Source files\HARDWARE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\HARDWARE\TIMER\timer.c">
+      <Filter>Source files\HARDWARE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\SYSTEM\delay\delay.c">
+      <Filter>Source files\SYSTEM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\SYSTEM\sys\sys.c">
+      <Filter>Source files\SYSTEM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\SYSTEM\usart\usart.c">
+      <Filter>Source files\SYSTEM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\CORE\startup_stm32f40_41xxx.s">
+      <Filter>Source files\CORE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\src\misc.c">
+      <Filter>Source files\FWLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\src\stm32f4xx_gpio.c">
+      <Filter>Source files\FWLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\src\stm32f4xx_fsmc.c">
+      <Filter>Source files\FWLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\src\stm32f4xx_rcc.c">
+      <Filter>Source files\FWLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\src\stm32f4xx_syscfg.c">
+      <Filter>Source files\FWLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\src\stm32f4xx_usart.c">
+      <Filter>Source files\FWLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\src\stm32f4xx_tim.c">
+      <Filter>Source files\FWLIB</Filter>
+    </ClCompile>
+    <Library Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\DSP_LIB\arm_cortexM4lf_math.lib">
+      <Filter>Source files\DSP_LIB</Filter>
+    </Library>
+    <None Include="mcu.props">
+      <Filter>Source files\Device-specific files</Filter>
+    </None>
+    <ClInclude Include="$(BSP_ROOT)\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <None Include="Experiment_47_1_DSP_BasicMathTest-Debug.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="Experiment_47_1_DSP_BasicMathTest-Release.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="MCU.xml">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\DSP_LIB\Include\arm_math.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Program Files (x86)\Sysprogs\VisualGDB\builtins_ia32.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\DSP_LIB\Include\core_cm0.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\DSP_LIB\Include\core_cm0plus.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\DSP_LIB\Include\core_cm3.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\CORE\core_cm4.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\DSP_LIB\Include\core_cm4.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\CORE\core_cm4_simd.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\DSP_LIB\Include\core_cmFunc.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\DSP_LIB\Include\core_cmInstr.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\SYSTEM\delay\delay.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\HARDWARE\LCD\FONT.H">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Program Files (x86)\Sysprogs\VisualGDB\gcc_compat.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\HARDWARE\KEY\key.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\HARDWARE\LCD\lcd.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\HARDWARE\LED\led.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\MDK\ARM\ARMCC\include\math.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\inc\misc.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\MDK\ARM\ARMCC\include\stdlib.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\USER\stm32f4xx.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\inc\stm32f4xx_adc.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\inc\stm32f4xx_can.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\USER\stm32f4xx_conf.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\inc\stm32f4xx_crc.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\inc\stm32f4xx_cryp.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\inc\stm32f4xx_dac.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\inc\stm32f4xx_dbgmcu.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\inc\stm32f4xx_dcmi.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\inc\stm32f4xx_dma.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\inc\stm32f4xx_dma2d.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\inc\stm32f4xx_exti.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\inc\stm32f4xx_flash.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\inc\stm32f4xx_flash_ramfunc.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\inc\stm32f4xx_fmc.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\inc\stm32f4xx_fsmc.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\inc\stm32f4xx_gpio.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\inc\stm32f4xx_hash.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\inc\stm32f4xx_i2c.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\USER\stm32f4xx_it.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\inc\stm32f4xx_iwdg.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\inc\stm32f4xx_ltdc.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\inc\stm32f4xx_pwr.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\inc\stm32f4xx_rcc.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\inc\stm32f4xx_rng.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\inc\stm32f4xx_rtc.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\inc\stm32f4xx_sai.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\inc\stm32f4xx_sdio.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\inc\stm32f4xx_spi.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\inc\stm32f4xx_syscfg.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\inc\stm32f4xx_tim.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\inc\stm32f4xx_usart.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\FWLIB\inc\stm32f4xx_wwdg.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\SYSTEM\sys\sys.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\USER\system_stm32f4xx.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\HARDWARE\TIMER\timer.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\SYSTEM\usart\usart.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\Experiment_47_1_DSP_BasicMathTest\readme.txt">
+      <Filter>Resource files</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\嵌入式学习\资料\探索者F4\探索者F4 视频盘(D盘)\第89讲 DSP测试实验\第89讲 DSP测试实验.ppt">
+      <Filter>Resource files</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\嵌入式学习\资料\探索者F4\探索者F4 视频盘(D盘)\第89讲 DSP测试实验\第89讲 DSP测试实验.rmvb">
+      <Filter>Resource files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

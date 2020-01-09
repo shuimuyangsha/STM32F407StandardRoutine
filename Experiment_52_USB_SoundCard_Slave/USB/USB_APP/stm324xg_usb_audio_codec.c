@@ -77,7 +77,7 @@ uint32_t EVAL_AUDIO_Init(uint16_t OutputDevice, uint8_t Volume, uint32_t AudioFr
 	I2S2_SampleRate_Set(AudioFreq);		//设置采样率
 	EVAL_AUDIO_VolumeCtl(Volume);		//设置音量
 	I2S2_TX_DMA_Init(i2sbuf[0],i2sbuf[1],AUDIO_OUT_PACKET/2); 
- 	i2s_tx_callback=audio_i2s_dma_callback;		//回调函数指wav_i2s_dma_callback
+ 	i2s_tx_callback=audio_i2s_dma_callback;		//回调函数指 audio_i2s_dma_callback
 	I2S_Play_Start();							//开启DMA  
 	printf("EVAL_AUDIO_Init:%d,%d\r\n",Volume,AudioFreq);
 	return 0; 

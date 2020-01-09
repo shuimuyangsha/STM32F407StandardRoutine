@@ -14,6 +14,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Experiment_52_USB_SoundCard_Slave", "Experiment_52_USB_SoundCard_Slave\Project\VS\Experiment_52_USB_SoundCard_Slave\Experiment_52_USB_SoundCard_Slave.vcxproj", "{C7E685C0-93F3-4FD2-BF31-A772C7899138}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Experiment_47_1_DSP_BasicMathTest", "Experiment_47_DSP_DigitalSignalProcessor\Project\VS\Experiment_47_1_DSP_BasicMathTest\Experiment_47_1_DSP_BasicMathTest.vcxproj", "{3B325062-41D8-40DF-ADBC-85F905294075}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Experiment_47_2_DSP_FFT", "Experiment_47_DSP_DigitalSignalProcessor\Project\VS\Experiment_47_2_DSP_FFT\Experiment_47_2_DSP_FFT.vcxproj", "{AB485062-3C02-4ABE-9F29-458D2A7CDEBB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|VisualGDB = Debug|VisualGDB
@@ -28,6 +32,14 @@ Global
 		{C7E685C0-93F3-4FD2-BF31-A772C7899138}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
 		{C7E685C0-93F3-4FD2-BF31-A772C7899138}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
 		{C7E685C0-93F3-4FD2-BF31-A772C7899138}.Release|VisualGDB.Build.0 = Release|VisualGDB
+		{3B325062-41D8-40DF-ADBC-85F905294075}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{3B325062-41D8-40DF-ADBC-85F905294075}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{3B325062-41D8-40DF-ADBC-85F905294075}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{3B325062-41D8-40DF-ADBC-85F905294075}.Release|VisualGDB.Build.0 = Release|VisualGDB
+		{AB485062-3C02-4ABE-9F29-458D2A7CDEBB}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{AB485062-3C02-4ABE-9F29-458D2A7CDEBB}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{AB485062-3C02-4ABE-9F29-458D2A7CDEBB}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{AB485062-3C02-4ABE-9F29-458D2A7CDEBB}.Release|VisualGDB.Build.0 = Release|VisualGDB
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
