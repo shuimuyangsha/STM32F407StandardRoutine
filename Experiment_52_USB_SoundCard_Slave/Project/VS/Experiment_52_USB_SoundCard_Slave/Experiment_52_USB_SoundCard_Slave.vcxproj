@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|VisualGDB">
+      <Configuration>Debug</Configuration>
+      <Platform>VisualGDB</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|VisualGDB">
+      <Configuration>Release</Configuration>
+      <Platform>VisualGDB</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{C7E685C0-93F3-4FD2-BF31-A772C7899138}</ProjectGuid>
+    <BSP_ID>KEIL:Keil/STM32F4xx_DFP</BSP_ID>
+    <BSP_VERSION>2.6.0</BSP_VERSION>
+    <InPlaceBSPSubdir />
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <MCUPropertyListFile>$(ProjectDir)mcu.props</MCUPropertyListFile>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <MCUPropertyListFile>$(ProjectDir)mcu.props</MCUPropertyListFile>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <GNUConfigurationType>Debug</GNUConfigurationType>
+    <ToolchainID>com.sysprogs.toolchains.nongnu.armcc</ToolchainID>
+    <ToolchainVersion>5.x//r1</ToolchainVersion>
+    <TargetExt>.elf</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <ToolchainID>com.sysprogs.toolchains.nongnu.armcc</ToolchainID>
+    <ToolchainVersion>5.x//r1</ToolchainVersion>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\CORE;..\..\..\SYSTEM\delay;..\..\..\SYSTEM\sys;..\..\..\SYSTEM\usart;..\..\..\USER;..\..\..\HARDWARE\LED;..\..\..\HARDWARE\LCD;..\..\..\HARDWARE\KEY;..\..\..\HARDWARE\SRAM;..\..\..\HARDWARE\SDIO;..\..\..\MALLOC;..\..\..\HARDWARE\SPI;..\..\..\HARDWARE\W25QXX;..\..\..\FWLIB\inc;..\..\..\HARDWARE\24CXX;..\..\..\HARDWARE\IIC;..\..\..\HARDWARE\I2S;..\..\..\HARDWARE\WM8978;..\..\..\APP;..\..\..\AUDIOCODEC\wav;..\..\..\USB\USB_APP;..\..\..\USB\STM32_USB_OTG_Driver\inc;..\..\..\USB\STM32_USB_Device_Library\Core\inc;..\..\..\USB\STM32_USB_Device_Library\Class\audio\inc;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>STM32F40_41xxx;USE_STDPERIPH_DRIVER;USE_USB_OTG_FS;STM32F4XX;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions />
+      <CLanguageStandard />
+      <CPPLanguageStandard />
+    </ClCompile>
+    <Link>
+      <AdditionalLinkerInputs>%(Link.AdditionalLinkerInputs)</AdditionalLinkerInputs>
+      <AdditionalOptions />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\CORE;..\..\..\SYSTEM\delay;..\..\..\SYSTEM\sys;..\..\..\SYSTEM\usart;..\..\..\USER;..\..\..\HARDWARE\LED;..\..\..\HARDWARE\LCD;..\..\..\HARDWARE\KEY;..\..\..\HARDWARE\SRAM;..\..\..\HARDWARE\SDIO;..\..\..\MALLOC;..\..\..\HARDWARE\SPI;..\..\..\HARDWARE\W25QXX;..\..\..\FWLIB\inc;..\..\..\HARDWARE\24CXX;..\..\..\HARDWARE\IIC;..\..\..\HARDWARE\I2S;..\..\..\HARDWARE\WM8978;..\..\..\APP;..\..\..\AUDIOCODEC\wav;..\..\..\USB\USB_APP;..\..\..\USB\STM32_USB_OTG_Driver\inc;..\..\..\USB\STM32_USB_Device_Library\Core\inc;..\..\..\USB\STM32_USB_Device_Library\Class\audio\inc;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>STM32F40_41xxx;USE_STDPERIPH_DRIVER;USE_USB_OTG_FS;STM32F4XX;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions />
+      <CLanguageStandard />
+      <CPPLanguageStandard />
+    </ClCompile>
+    <Link>
+      <AdditionalLinkerInputs>%(Link.AdditionalLinkerInputs)</AdditionalLinkerInputs>
+      <AdditionalOptions />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\USER\main.c" />
+    <ClCompile Include="..\..\..\USER\stm32f4xx_it.c" />
+    <ClCompile Include="..\..\..\USER\system_stm32f4xx.c" />
+    <ClCompile Include="..\..\..\HARDWARE\LED\led.c" />
+    <ClCompile Include="..\..\..\HARDWARE\LCD\lcd.c" />
+    <ClCompile Include="..\..\..\HARDWARE\KEY\key.c" />
+    <ClCompile Include="..\..\..\HARDWARE\SPI\spi.c" />
+    <ClCompile Include="..\..\..\HARDWARE\W25QXX\w25qxx.c" />
+    <ClCompile Include="..\..\..\HARDWARE\SDIO\sdio_sdcard.c" />
+    <ClCompile Include="..\..\..\HARDWARE\IIC\myiic.c" />
+    <ClCompile Include="..\..\..\HARDWARE\24CXX\24cxx.c" />
+    <ClCompile Include="..\..\..\HARDWARE\I2S\i2s.c" />
+    <ClCompile Include="..\..\..\HARDWARE\WM8978\wm8978.c" />
+    <ClCompile Include="..\..\..\SYSTEM\delay\delay.c" />
+    <ClCompile Include="..\..\..\SYSTEM\sys\sys.c" />
+    <ClCompile Include="..\..\..\SYSTEM\usart\usart.c" />
+    <ClCompile Include="..\..\..\CORE\startup_stm32f40_41xxx.s" />
+    <ClCompile Include="..\..\..\FWLIB\src\misc.c" />
+    <ClCompile Include="..\..\..\FWLIB\src\stm32f4xx_gpio.c" />
+    <ClCompile Include="..\..\..\FWLIB\src\stm32f4xx_fsmc.c" />
+    <ClCompile Include="..\..\..\FWLIB\src\stm32f4xx_rcc.c" />
+    <ClCompile Include="..\..\..\FWLIB\src\stm32f4xx_usart.c" />
+    <ClCompile Include="..\..\..\FWLIB\src\stm32f4xx_tim.c" />
+    <ClCompile Include="..\..\..\FWLIB\src\stm32f4xx_syscfg.c" />
+    <ClCompile Include="..\..\..\FWLIB\src\stm32f4xx_spi.c" />
+    <ClCompile Include="..\..\..\FWLIB\src\stm32f4xx_sdio.c" />
+    <ClCompile Include="..\..\..\FWLIB\src\stm32f4xx_dma.c" />
+    <ClCompile Include="..\..\..\MALLOC\malloc.c" />
+    <ClCompile Include="..\..\..\USB\STM32_USB_OTG_Driver\src\usb_core.c" />
+    <ClCompile Include="..\..\..\USB\STM32_USB_OTG_Driver\src\usb_dcd.c" />
+    <ClCompile Include="..\..\..\USB\STM32_USB_OTG_Driver\src\usb_dcd_int.c" />
+    <ClCompile Include="..\..\..\USB\STM32_USB_Device_Library\Core\src\usbd_core.c" />
+    <ClCompile Include="..\..\..\USB\STM32_USB_Device_Library\Core\src\usbd_ioreq.c" />
+    <ClCompile Include="..\..\..\USB\STM32_USB_Device_Library\Core\src\usbd_req.c" />
+    <ClCompile Include="..\..\..\USB\STM32_USB_Device_Library\Class\audio\src\usbd_audio_core.c" />
+    <ClCompile Include="..\..\..\USB\STM32_USB_Device_Library\Class\audio\src\usbd_audio_out_if.c" />
+    <ClCompile Include="..\..\..\USB\USB_APP\stm324xg_usb_audio_codec.c" />
+    <ClCompile Include="..\..\..\USB\USB_APP\usb_bsp.c" />
+    <ClCompile Include="..\..\..\USB\USB_APP\usbd_desc.c" />
+    <ClCompile Include="..\..\..\USB\USB_APP\usbd_usr.c" />
+    <ClInclude Include="..\..\..\CORE\core_cm4.h" />
+    <ClInclude Include="..\..\..\CORE\core_cm4_simd.h" />
+    <ClInclude Include="..\..\..\CORE\core_cmFunc.h" />
+    <ClInclude Include="..\..\..\CORE\core_cmInstr.h" />
+    <ClInclude Include="..\..\..\FWLIB\inc\misc.h" />
+    <ClInclude Include="..\..\..\FWLIB\inc\stm32f4xx_adc.h" />
+    <ClInclude Include="..\..\..\FWLIB\inc\stm32f4xx_can.h" />
+    <ClInclude Include="..\..\..\FWLIB\inc\stm32f4xx_crc.h" />
+    <ClInclude Include="..\..\..\FWLIB\inc\stm32f4xx_cryp.h" />
+    <ClInclude Include="..\..\..\FWLIB\inc\stm32f4xx_dac.h" />
+    <ClInclude Include="..\..\..\FWLIB\inc\stm32f4xx_dbgmcu.h" />
+    <ClInclude Include="..\..\..\FWLIB\inc\stm32f4xx_dcmi.h" />
+    <ClInclude Include="..\..\..\FWLIB\inc\stm32f4xx_dma.h" />
+    <ClInclude Include="..\..\..\FWLIB\inc\stm32f4xx_dma2d.h" />
+    <ClInclude Include="..\..\..\FWLIB\inc\stm32f4xx_exti.h" />
+    <ClInclude Include="..\..\..\FWLIB\inc\stm32f4xx_flash.h" />
+    <ClInclude Include="..\..\..\FWLIB\inc\stm32f4xx_flash_ramfunc.h" />
+    <ClInclude Include="..\..\..\FWLIB\inc\stm32f4xx_fmc.h" />
+    <ClInclude Include="..\..\..\FWLIB\inc\stm32f4xx_fsmc.h" />
+    <ClInclude Include="..\..\..\FWLIB\inc\stm32f4xx_gpio.h" />
+    <ClInclude Include="..\..\..\FWLIB\inc\stm32f4xx_hash.h" />
+    <ClInclude Include="..\..\..\FWLIB\inc\stm32f4xx_i2c.h" />
+    <ClInclude Include="..\..\..\FWLIB\inc\stm32f4xx_iwdg.h" />
+    <ClInclude Include="..\..\..\FWLIB\inc\stm32f4xx_ltdc.h" />
+    <ClInclude Include="..\..\..\FWLIB\inc\stm32f4xx_pwr.h" />
+    <ClInclude Include="..\..\..\FWLIB\inc\stm32f4xx_rcc.h" />
+    <ClInclude Include="..\..\..\FWLIB\inc\stm32f4xx_rng.h" />
+    <ClInclude Include="..\..\..\FWLIB\inc\stm32f4xx_rtc.h" />
+    <ClInclude Include="..\..\..\FWLIB\inc\stm32f4xx_sai.h" />
+    <ClInclude Include="..\..\..\FWLIB\inc\stm32f4xx_sdio.h" />
+    <ClInclude Include="..\..\..\FWLIB\inc\stm32f4xx_spi.h" />
+    <ClInclude Include="..\..\..\FWLIB\inc\stm32f4xx_syscfg.h" />
+    <ClInclude Include="..\..\..\FWLIB\inc\stm32f4xx_tim.h" />
+    <ClInclude Include="..\..\..\FWLIB\inc\stm32f4xx_usart.h" />
+    <ClInclude Include="..\..\..\FWLIB\inc\stm32f4xx_wwdg.h" />
+    <ClInclude Include="..\..\..\HARDWARE\24CXX\24cxx.h" />
+    <ClInclude Include="..\..\..\HARDWARE\I2S\i2s.h" />
+    <ClInclude Include="..\..\..\HARDWARE\IIC\myiic.h" />
+    <ClInclude Include="..\..\..\HARDWARE\KEY\key.h" />
+    <ClInclude Include="..\..\..\HARDWARE\LCD\FONT.H" />
+    <ClInclude Include="..\..\..\HARDWARE\LCD\lcd.h" />
+    <ClInclude Include="..\..\..\HARDWARE\LED\led.h" />
+    <ClInclude Include="..\..\..\HARDWARE\SDIO\sdio_sdcard.h" />
+    <ClInclude Include="..\..\..\HARDWARE\SPI\spi.h" />
+    <ClInclude Include="..\..\..\HARDWARE\W25QXX\w25qxx.h" />
+    <ClInclude Include="..\..\..\HARDWARE\WM8978\wm8978.h" />
+    <ClInclude Include="..\..\..\MALLOC\malloc.h" />
+    <ClInclude Include="..\..\..\SYSTEM\delay\delay.h" />
+    <ClInclude Include="..\..\..\SYSTEM\sys\sys.h" />
+    <ClInclude Include="..\..\..\SYSTEM\usart\usart.h" />
+    <ClInclude Include="..\..\..\USB\STM32_USB_Device_Library\Class\audio\inc\usbd_audio_core.h" />
+    <ClInclude Include="..\..\..\USB\STM32_USB_Device_Library\Class\audio\inc\usbd_audio_out_if.h" />
+    <ClInclude Include="..\..\..\USB\STM32_USB_Device_Library\Core\inc\usbd_core.h" />
+    <ClInclude Include="..\..\..\USB\STM32_USB_Device_Library\Core\inc\usbd_def.h" />
+    <ClInclude Include="..\..\..\USB\STM32_USB_Device_Library\Core\inc\usbd_ioreq.h" />
+    <ClInclude Include="..\..\..\USB\STM32_USB_Device_Library\Core\inc\usbd_req.h" />
+    <ClInclude Include="..\..\..\USB\STM32_USB_Device_Library\Core\inc\usbd_usr.h" />
+    <ClInclude Include="..\..\..\USB\STM32_USB_OTG_Driver\inc\usb_bsp.h" />
+    <ClInclude Include="..\..\..\USB\STM32_USB_OTG_Driver\inc\usb_core.h" />
+    <ClInclude Include="..\..\..\USB\STM32_USB_OTG_Driver\inc\usb_dcd.h" />
+    <ClInclude Include="..\..\..\USB\STM32_USB_OTG_Driver\inc\usb_dcd_int.h" />
+    <ClInclude Include="..\..\..\USB\STM32_USB_OTG_Driver\inc\usb_defines.h" />
+    <ClInclude Include="..\..\..\USB\STM32_USB_OTG_Driver\inc\usb_regs.h" />
+    <ClInclude Include="..\..\..\USB\USB_APP\stm324xg_usb_audio_codec.h" />
+    <ClInclude Include="..\..\..\USB\USB_APP\usbd_conf.h" />
+    <ClInclude Include="..\..\..\USB\USB_APP\usbd_desc.h" />
+    <ClInclude Include="..\..\..\USB\USB_APP\usb_conf.h" />
+    <ClInclude Include="..\..\..\USER\stm32f4xx.h" />
+    <ClInclude Include="..\..\..\USER\stm32f4xx_conf.h" />
+    <ClInclude Include="..\..\..\USER\stm32f4xx_it.h" />
+    <ClInclude Include="..\..\..\USER\system_stm32f4xx.h" />
+    <ClInclude Include="C:\Program Files (x86)\Sysprogs\VisualGDB\builtins_ia32.h" />
+    <ClInclude Include="C:\Program Files (x86)\Sysprogs\VisualGDB\gcc_compat.h" />
+    <ClInclude Include="G:\MDK\ARM\ARMCC\include\stdio.h" />
+    <ClInclude Include="G:\MDK\ARM\ARMCC\include\stdlib.h" />
+    <ClInclude Include="G:\MDK\ARM\ARMCC\include\string.h" />
+    <None Include="..\..\..\..\..\..\..\嵌入式学习\资料\探索者F4\探索者F4 视频盘(D盘)\第95讲 USB声卡(Slave)实验(M4)\第95讲 USB声卡(Slave)实验(M4).rmvb" />
+    <None Include="..\..\..\..\..\..\..\嵌入式学习\资料\探索者F4\探索者F4 视频盘(D盘)\第95讲 USB声卡(Slave)实验(M4)\第95讲 USB声卡实验-M4.ppt" />
+    <None Include="mcu.props" />
+    <None Include="..\..\..\readme.txt" />
+    <ClInclude Include="$(BSP_ROOT)\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h" />
+    <None Include="Experiment_52_USB_SoundCard_Slave-Debug.vgdbsettings" />
+    <None Include="Experiment_52_USB_SoundCard_Slave-Release.vgdbsettings" />
+    <None Include="MCU.xml" />
+  </ItemGroup>
+</Project>
