@@ -18,6 +18,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Experiment_47_1_DSP_BasicMa
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Experiment_47_2_DSP_FFT", "Experiment_47_DSP_DigitalSignalProcessor\Project\VS\Experiment_47_2_DSP_FFT\Experiment_47_2_DSP_FFT.vcxproj", "{AB485062-3C02-4ABE-9F29-458D2A7CDEBB}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Experiment_55_EthernetMAC_Controller", "Experiment_55_EthernetMAC_Controller\Project\VS\Experiment_55_EthernetMAC_Controller\Experiment_55_EthernetMAC_Controller.vcxproj", "{89800DEA-7D2F-4897-BA9F-84E28D101242}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Experiment_04_SerialPort", "Experiment_04_SerialPort\Project\VS\Experiment_04_SerialPort\Experiment_04_SerialPort.vcxproj", "{5A8A4DF5-D3D9-4FE1-B137-1E7225917355}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|VisualGDB = Debug|VisualGDB
@@ -40,6 +44,14 @@ Global
 		{AB485062-3C02-4ABE-9F29-458D2A7CDEBB}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
 		{AB485062-3C02-4ABE-9F29-458D2A7CDEBB}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
 		{AB485062-3C02-4ABE-9F29-458D2A7CDEBB}.Release|VisualGDB.Build.0 = Release|VisualGDB
+		{89800DEA-7D2F-4897-BA9F-84E28D101242}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{89800DEA-7D2F-4897-BA9F-84E28D101242}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{89800DEA-7D2F-4897-BA9F-84E28D101242}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{89800DEA-7D2F-4897-BA9F-84E28D101242}.Release|VisualGDB.Build.0 = Release|VisualGDB
+		{5A8A4DF5-D3D9-4FE1-B137-1E7225917355}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{5A8A4DF5-D3D9-4FE1-B137-1E7225917355}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{5A8A4DF5-D3D9-4FE1-B137-1E7225917355}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{5A8A4DF5-D3D9-4FE1-B137-1E7225917355}.Release|VisualGDB.Build.0 = Release|VisualGDB
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

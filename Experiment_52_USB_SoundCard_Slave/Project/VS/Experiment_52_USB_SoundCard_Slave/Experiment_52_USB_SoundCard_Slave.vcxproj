@@ -190,6 +190,11 @@
     <ClInclude Include="G:\MDK\ARM\ARMCC\include\string.h" />
     <None Include="..\..\..\..\..\..\..\嵌入式学习\资料\探索者F4\探索者F4 视频盘(D盘)\第95讲 USB声卡(Slave)实验(M4)\第95讲 USB声卡(Slave)实验(M4).rmvb" />
     <None Include="..\..\..\..\..\..\..\嵌入式学习\资料\探索者F4\探索者F4 视频盘(D盘)\第95讲 USB声卡(Slave)实验(M4)\第95讲 USB声卡实验-M4.ppt" />
+    <None Include="..\..\..\..\..\..\..\嵌入式学习\资料\探索者F4\探索者F4 资料盘(A盘)\8，STM32参考资料\2，STM32 USB 学习资料\CD00289278.pdf" />
+    <None Include="..\..\..\..\..\..\..\嵌入式学习\资料\探索者F4\探索者F4 资料盘(A盘)\8，STM32参考资料\2，STM32 USB 学习资料\USB培训_Part1_协议.pdf" />
+    <None Include="..\..\..\..\..\..\..\嵌入式学习\资料\探索者F4\探索者F4 资料盘(A盘)\8，STM32参考资料\2，STM32 USB 学习资料\USB培训_Part2_USB_IP及其库的使用.pdf" />
+    <None Include="..\..\..\..\..\..\..\嵌入式学习\资料\探索者F4\探索者F4 资料盘(A盘)\8，STM32参考资料\2，STM32 USB 学习资料\USB培训_Part3_USB_OTG_IP及其库的使用.pdf" />
+    <None Include="..\..\..\..\..\..\..\嵌入式学习\资料\探索者F4\探索者F4 资料盘(A盘)\8，STM32参考资料\2，STM32 USB 学习资料\圈圈教你玩USB（第2版）.pdf" />
     <None Include="mcu.props" />
     <None Include="..\..\..\readme.txt" />
     <ClInclude Include="$(BSP_ROOT)\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h" />

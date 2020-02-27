@@ -90,8 +90,8 @@ int main(void)
 	LED_Init();		        //³õÊ¼»¯LED¶Ë¿Ú
   while(1)
 	{
-     LED0=0;			  //LED0ÁÁ
-	   LED1=1;				//LED1Ãð
+		LED0=0;			  //LED0ÁÁ
+		LED1=1;				//LED1Ãð
 		 delay_ms(500);
 		 LED0=1;				//LED0Ãð
 		 LED1=0;				//LED1ÁÁ

@@ -460,5 +460,20 @@
     <None Include="..\..\..\readme.txt">
       <Filter>Resource files</Filter>
     </None>
+    <None Include="..\..\..\..\..\..\..\嵌入式学习\资料\探索者F4\探索者F4 资料盘(A盘)\8，STM32参考资料\2，STM32 USB 学习资料\CD00289278.pdf">
+      <Filter>Resource files</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\嵌入式学习\资料\探索者F4\探索者F4 资料盘(A盘)\8，STM32参考资料\2，STM32 USB 学习资料\USB培训_Part1_协议.pdf">
+      <Filter>Resource files</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\嵌入式学习\资料\探索者F4\探索者F4 资料盘(A盘)\8，STM32参考资料\2，STM32 USB 学习资料\USB培训_Part2_USB_IP及其库的使用.pdf">
+      <Filter>Resource files</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\嵌入式学习\资料\探索者F4\探索者F4 资料盘(A盘)\8，STM32参考资料\2，STM32 USB 学习资料\USB培训_Part3_USB_OTG_IP及其库的使用.pdf">
+      <Filter>Resource files</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\嵌入式学习\资料\探索者F4\探索者F4 资料盘(A盘)\8，STM32参考资料\2，STM32 USB 学习资料\圈圈教你玩USB（第2版）.pdf">
+      <Filter>Resource files</Filter>
+    </None>
   </ItemGroup>
 </Project>
