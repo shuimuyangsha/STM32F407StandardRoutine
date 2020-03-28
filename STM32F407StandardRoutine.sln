@@ -22,6 +22,12 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Experiment_55_EthernetMAC_C
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Experiment_04_SerialPort", "Experiment_04_SerialPort\Project\VS\Experiment_04_SerialPort\Experiment_04_SerialPort.vcxproj", "{5A8A4DF5-D3D9-4FE1-B137-1E7225917355}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Experiment_08_TimerInterrupts", "Experiment_08_TimerInterrupts\Project\VS\Experiment_08_TimerInterrupts\Experiment_08_TimerInterrupts.vcxproj", "{4A533302-77B7-4714-A197-6FC3A736403D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UCOSII_3_MessageQueue_Sem_SoftTimer", "UCOSII_3_MessageQueue_Semaphore_SoftwareTimer\Project\VS\UCOSII_3_MessageQueue_Sem_SoftTimer\UCOSII_3_MessageQueue_Sem_SoftTimer.vcxproj", "{3CDCA088-9421-49EB-A0B1-5DE7407BC447}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UCOSII_1_2_TaskCreate_Delete_Sus_Resu", "UCOSII_1_2_TaskCreate_Delete_Suspend_Resume\Project\VS\UCOSII_1_2_TaskCreate_Delete_Sus_Resu\UCOSII_1_2_TaskCreate_Delete_Sus_Resu.vcxproj", "{AB91E459-DD59-4229-B7FD-D8DAA1CD61FC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|VisualGDB = Debug|VisualGDB
@@ -52,6 +58,18 @@ Global
 		{5A8A4DF5-D3D9-4FE1-B137-1E7225917355}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
 		{5A8A4DF5-D3D9-4FE1-B137-1E7225917355}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
 		{5A8A4DF5-D3D9-4FE1-B137-1E7225917355}.Release|VisualGDB.Build.0 = Release|VisualGDB
+		{4A533302-77B7-4714-A197-6FC3A736403D}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{4A533302-77B7-4714-A197-6FC3A736403D}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{4A533302-77B7-4714-A197-6FC3A736403D}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{4A533302-77B7-4714-A197-6FC3A736403D}.Release|VisualGDB.Build.0 = Release|VisualGDB
+		{3CDCA088-9421-49EB-A0B1-5DE7407BC447}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{3CDCA088-9421-49EB-A0B1-5DE7407BC447}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{3CDCA088-9421-49EB-A0B1-5DE7407BC447}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{3CDCA088-9421-49EB-A0B1-5DE7407BC447}.Release|VisualGDB.Build.0 = Release|VisualGDB
+		{AB91E459-DD59-4229-B7FD-D8DAA1CD61FC}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{AB91E459-DD59-4229-B7FD-D8DAA1CD61FC}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{AB91E459-DD59-4229-B7FD-D8DAA1CD61FC}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{AB91E459-DD59-4229-B7FD-D8DAA1CD61FC}.Release|VisualGDB.Build.0 = Release|VisualGDB
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

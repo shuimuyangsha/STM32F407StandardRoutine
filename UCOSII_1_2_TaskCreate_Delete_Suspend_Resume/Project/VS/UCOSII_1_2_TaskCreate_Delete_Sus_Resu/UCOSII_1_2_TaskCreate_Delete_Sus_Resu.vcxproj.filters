@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{49406cdb-e577-471a-aee4-b821125e6f25}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header files">
+      <UniqueIdentifier>{91cfa376-6419-40a6-8481-ea4a80c6e34c}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource files">
+      <UniqueIdentifier>{d341b8f0-3e58-4553-8fd0-df201cdcb740}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Source files\USER">
+      <UniqueIdentifier>{47572306-65b0-4cb0-aeca-c8110f3d70ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\HARDWARE">
+      <UniqueIdentifier>{1ac4363a-39bf-4aea-a4bf-476d6636a8ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\SYSTEM">
+      <UniqueIdentifier>{f3cab253-d136-4ca2-ab64-511de810ef49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\CORE">
+      <UniqueIdentifier>{492ebac2-3643-4049-b779-659edba6e2da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\FWLIB">
+      <UniqueIdentifier>{bba2cd36-feb9-4c2f-8cab-388941ea1039}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\UCOSII-CORE">
+      <UniqueIdentifier>{7ba85231-cd0f-4435-bc14-4b219341bd9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\UCOSII-PORT">
+      <UniqueIdentifier>{91319a5e-9e74-4ee0-bf76-84df47567aa2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\UCOSII-CONFIG">
+      <UniqueIdentifier>{8bb8ce95-a905-4578-b815-9031440ea2cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files">
+      <UniqueIdentifier>{83f0d444-0aa6-438e-b4d2-2dacd892650c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\USER">
+      <UniqueIdentifier>{59693929-923a-4acd-97b2-c21b13ddf3d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\HARDWARE">
+      <UniqueIdentifier>{95c4f3d6-6041-4494-8b56-f8f21d5bbdd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\SYSTEM">
+      <UniqueIdentifier>{d429f4c9-5e5c-432f-bb2e-3c90dbf83c13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\CORE">
+      <UniqueIdentifier>{c2470a15-ea7f-4398-8361-e42bbb7ea7ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\FWLIB">
+      <UniqueIdentifier>{273e2f61-1496-4428-97ce-e0ffba53314c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\UCOSII-CORE">
+      <UniqueIdentifier>{11c6faa3-76a5-4c6b-a599-6593b2d075bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\UCOSII-PORT">
+      <UniqueIdentifier>{b5c7d6e0-7d53-45e8-bd48-9874af3bf6c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\UCOSII-CONFIG">
+      <UniqueIdentifier>{c671b2a0-24fa-4373-b0f5-8f1743287cde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files">
+      <UniqueIdentifier>{169287d1-e7a0-45d3-b88a-affb4a2967a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VisualGDB settings">
+      <UniqueIdentifier>{742786a2-747b-4186-9c1d-369799767b2b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\USER\main.c">
+      <Filter>Source files\USER</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\USER\stm32f4xx_it.c">
+      <Filter>Source files\USER</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\USER\system_stm32f4xx.c">
+      <Filter>Source files\USER</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\HARDWARE\LED\led.c">
+      <Filter>Source files\HARDWARE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\HARDWARE\BEEP\beep.c">
+      <Filter>Source files\HARDWARE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\HARDWARE\KEY\key.c">
+      <Filter>Source files\HARDWARE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SYSTEM\delay\delay.c">
+      <Filter>Source files\SYSTEM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SYSTEM\sys\sys.c">
+      <Filter>Source files\SYSTEM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SYSTEM\usart\usart.c">
+      <Filter>Source files\SYSTEM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\CORE\startup_stm32f40_41xxx.s">
+      <Filter>Source files\CORE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\FWLIB\src\misc.c">
+      <Filter>Source files\FWLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\FWLIB\src\stm32f4xx_gpio.c">
+      <Filter>Source files\FWLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\FWLIB\src\stm32f4xx_rcc.c">
+      <Filter>Source files\FWLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\FWLIB\src\stm32f4xx_syscfg.c">
+      <Filter>Source files\FWLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\FWLIB\src\stm32f4xx_usart.c">
+      <Filter>Source files\FWLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UCOSII\CORE\os_core.c">
+      <Filter>Source files\UCOSII-CORE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UCOSII\CORE\os_flag.c">
+      <Filter>Source files\UCOSII-CORE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UCOSII\CORE\os_mbox.c">
+      <Filter>Source files\UCOSII-CORE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UCOSII\CORE\os_mem.c">
+      <Filter>Source files\UCOSII-CORE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UCOSII\CORE\os_mutex.c">
+      <Filter>Source files\UCOSII-CORE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UCOSII\CORE\os_q.c">
+      <Filter>Source files\UCOSII-CORE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UCOSII\CORE\os_sem.c">
+      <Filter>Source files\UCOSII-CORE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UCOSII\CORE\os_task.c">
+      <Filter>Source files\UCOSII-CORE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UCOSII\CORE\os_time.c">
+      <Filter>Source files\UCOSII-CORE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UCOSII\CORE\os_tmr.c">
+      <Filter>Source files\UCOSII-CORE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UCOSII\PORT\os_cpu_c.c">
+      <Filter>Source files\UCOSII-PORT</Filter>
+    </ClCompile>
+    <None Include="mcu.props">
+      <Filter>Source files\Device-specific files</Filter>
+    </None>
+    <ClInclude Include="..\..\..\UCOSII\PORT\os_cpu.h">
+      <Filter>Header files\UCOSII-PORT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\UCOSII\CONFIG\includes.h">
+      <Filter>Header files\UCOSII-CONFIG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\UCOSII\CONFIG\os_cfg.h">
+      <Filter>Header files\UCOSII-CONFIG</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <None Include="UCOSII_1_2_TaskCreate_Delete_Sus_Resu-Debug.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="UCOSII_1_2_TaskCreate_Delete_Sus_Resu-Release.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="MCU.xml">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <ClCompile Include="..\..\..\UCOSII\PORT\os_cpu_a.s">
+      <Filter>Source files\UCOSII-PORT</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
