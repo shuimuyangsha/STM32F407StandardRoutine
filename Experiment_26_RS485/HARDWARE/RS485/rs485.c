@@ -18,20 +18,69 @@
 #if EN_USART2_RX   		//如果使能了接收   	  
 //接收缓存区 	
 u8 RS485_RX_BUF[64];  	//接收缓冲,最大64个字节.
+
+u16 USART2_RX_STA = 0;       //接收状态标记	
 //接收到的数据长度
 u8 RS485_RX_CNT=0;   
+
+
+FrameStatisticalStruct frame_statistical;
 void USART2_IRQHandler(void)
 {
-	u8 res;	    
-	if(USART_GetITStatus(USART2, USART_IT_RXNE) != RESET)//接收到数据
-	{	 	
-	  res =USART_ReceiveData(USART2);//;读取接收到的数据USART2->DR
-		if(RS485_RX_CNT<64)
+	//u8 res;	    
+	//if(USART_GetITStatus(USART2, USART_IT_RXNE) != RESET)//接收到数据
+	//{	 	
+	//  res =USART_ReceiveData(USART2);//;读取接收到的数据USART2->DR
+	//	if(RS485_RX_CNT<64)
+	//	{
+	//		RS485_RX_BUF[RS485_RX_CNT]=res;		//记录接收到的值
+	//		RS485_RX_CNT++;						//接收数据增加1 
+	//	} 
+	//}  											 
+
+	u8 res;                            //接收数据长度
+	if (USART_GetITStatus(USART2, USART_IT_RXNE) != RESET)
+	{
+		res = USART_ReceiveData(USART2);//(USART1->DR);
+
+		if ((USART2_RX_STA & 0x8000) == 0)//接收未完成
 		{
-			RS485_RX_BUF[RS485_RX_CNT]=res;		//记录接收到的值
-			RS485_RX_CNT++;						//接收数据增加1 
-		} 
-	}  											 
+			if (USART2_RX_STA & 0x4000) //接收到帧头
+			{
+				if (RS485_RX_CNT < FRAME_RX_BUFFER_LENGTH)
+				{
+					RS485_RX_BUF[RS485_RX_CNT] = res;
+					RS485_RX_CNT++;
+				}
+				if (RS485_RX_CNT >= FRAME_RX_BUFFER_LENGTH)
+				{
+					USART2_RX_STA |= 0x8000;
+					//RS485_RX_CNT=1;			//设置为发送模式
+					
+					frame_statistical.receive_frame_count++;
+
+					frame_statistical.previous_frame_serial_number = frame_statistical.current_frame_serial_number;
+					frame_statistical.current_frame_serial_number = (RS485_RX_BUF[7] << 8 | RS485_RX_BUF[8]);
+
+				}
+			}
+			else
+			{
+				if (res == 0x55) //判断帧头
+				{
+					USART2_RX_STA |= 0x4000;
+					RS485_RX_BUF[RS485_RX_CNT] = res;
+					RS485_RX_CNT++;
+				}
+				else
+				{
+					//USART2_RX_STA = 0x0000;
+					RS485_RX_CNT = 0;
+				}
+			}
+		}
+	}
+
 } 
 #endif										 
 //初始化IO 串口2
@@ -102,12 +151,25 @@ void RS485_Send_Data(u8 *buf,u8 len)
 {
 	u8 t;
 	RS485_TX_EN=1;			//设置为发送模式
-  	for(t=0;t<len;t++)		//循环发送数据
+ // 	for(t=0;t<len;t++)		//循环发送数据
+	//{
+	//  while(USART_GetFlagStatus(USART2,USART_FLAG_TC)==RESET); //等待发送结束		
+ //   USART_SendData(USART2,buf[t]); //发送数据
+	//}	 
+	//while(USART_GetFlagStatus(USART2,USART_FLAG_TC)==RESET); //等待发送结束		
+
+	for (t = 0; t < len; t++)		//循环发送数据
 	{
-	  while(USART_GetFlagStatus(USART2,USART_FLAG_TC)==RESET); //等待发送结束		
-    USART_SendData(USART2,buf[t]); //发送数据
-	}	 
-	while(USART_GetFlagStatus(USART2,USART_FLAG_TC)==RESET); //等待发送结束		
+		while (USART_GetFlagStatus(USART2, USART_FLAG_TC) == RESET); //等待发送结束		
+		USART_SendData(USART2, buf[t]); //发送数据
+		if (t == 1) {
+			StandbyIO1(StandbyIO_ON);
+			StandbyIO1(StandbyIO_OFF);
+		}
+	}
+	while (USART_GetFlagStatus(USART2, USART_FLAG_TC) == RESET); //等待发送结束		
+
+
 	RS485_RX_CNT=0;	  
 	RS485_TX_EN=0;				//设置为接收模式	
 }
@@ -132,6 +194,20 @@ void RS485_Receive_Data(u8 *buf,u8 *len)
 }
 
 
+void Processing_statistical_results(FrameStatisticalStruct *pframe_statistical) {
+
+	if (pframe_statistical->current_frame_serial_number< pframe_statistical->previous_frame_serial_number
+		|| pframe_statistical->current_frame_serial_number < pframe_statistical->frame_total) {
+	
+		pframe_statistical->receive_success_rate = pframe_statistical->receive_frame_count / pframe_statistical->frame_total;
+
+
+	}
+	else {
+	
+	}
+
+}
 
 
 

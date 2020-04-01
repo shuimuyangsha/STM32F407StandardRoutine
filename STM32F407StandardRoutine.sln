@@ -28,6 +28,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UCOSII_3_MessageQueue_Sem_S
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UCOSII_1_2_TaskCreate_Delete_Sus_Resu", "UCOSII_1_2_TaskCreate_Delete_Suspend_Resume\Project\VS\UCOSII_1_2_TaskCreate_Delete_Sus_Resu\UCOSII_1_2_TaskCreate_Delete_Sus_Resu.vcxproj", "{AB91E459-DD59-4229-B7FD-D8DAA1CD61FC}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Experiment_26_RS485", "Experiment_26_RS485\Project\VS\Experiment_26_RS485\Experiment_26_RS485.vcxproj", "{76B07DF2-F797-4B52-8123-A6C6115301F7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|VisualGDB = Debug|VisualGDB
@@ -70,6 +72,10 @@ Global
 		{AB91E459-DD59-4229-B7FD-D8DAA1CD61FC}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
 		{AB91E459-DD59-4229-B7FD-D8DAA1CD61FC}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
 		{AB91E459-DD59-4229-B7FD-D8DAA1CD61FC}.Release|VisualGDB.Build.0 = Release|VisualGDB
+		{76B07DF2-F797-4B52-8123-A6C6115301F7}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{76B07DF2-F797-4B52-8123-A6C6115301F7}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{76B07DF2-F797-4B52-8123-A6C6115301F7}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{76B07DF2-F797-4B52-8123-A6C6115301F7}.Release|VisualGDB.Build.0 = Release|VisualGDB
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
