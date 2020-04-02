@@ -81,8 +81,7 @@ int main(void)
 		//}
 
 		//RS485_Send_Data(rs485buf, 50);//·¢ËÍ5¸ö×Ö½Ú 
-		RS485_Receive_Data(rs485buf, FRAME_RX_BUFFER_LENGTH);
-		//delay_ms(100);
-
+		RS485_Receive_Data(rs485buf, FRAME_RX_BUFFER_LENGTH);		
+		//delay_ms(10);
 	}   
 }

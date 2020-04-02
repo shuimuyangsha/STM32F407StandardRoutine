@@ -24,7 +24,13 @@ u16 USART2_RX_STA = 0;       //接收状态标记
 u8 RS485_RX_CNT=0;   
 
 
-FrameStatisticalStruct frame_statistical;
+FrameStatisticalStruct frame_statistical = {
+	.frame_total = 10,			//统计帧总数，即帧编号的最大值
+	.previous_frame_serial_number = 0,		//帧编号
+	.current_frame_serial_number = 0,		//当前帧编号
+	.receive_frame_count = 0,		//成功接收帧计数
+	.receive_success_rate = 0,		//接收成功率
+};
 void USART2_IRQHandler(void)
 {
 	//u8 res;	    
@@ -57,10 +63,6 @@ void USART2_IRQHandler(void)
 					USART2_RX_STA |= 0x8000;
 					//RS485_RX_CNT=1;			//设置为发送模式
 					
-					frame_statistical.receive_frame_count++;
-
-					frame_statistical.previous_frame_serial_number = frame_statistical.current_frame_serial_number;
-					frame_statistical.current_frame_serial_number = (RS485_RX_BUF[7] << 8 | RS485_RX_BUF[8]);
 
 				}
 			}
@@ -74,13 +76,11 @@ void USART2_IRQHandler(void)
 				}
 				else
 				{
-					//USART2_RX_STA = 0x0000;
 					RS485_RX_CNT = 0;
 				}
 			}
 		}
 	}
-
 } 
 #endif										 
 //初始化IO 串口2
@@ -178,30 +178,73 @@ void RS485_Send_Data(u8 *buf,u8 len)
 //len:读到的数据长度
 void RS485_Receive_Data(u8 *buf,u8 *len)
 {
-	u8 rxlen=RS485_RX_CNT;
-	u8 i=0;
-	*len=0;				//默认为0
-	delay_ms(10);		//等待10ms,连续超过10ms没有接收到一个数据,则认为接收结束
-	if(rxlen==RS485_RX_CNT&&rxlen)//接收到了数据,且接收完成了
+	//u8 rxlen=RS485_RX_CNT;
+	//u8 i=0;
+	//*len=0;				//默认为0
+	//delay_ms(10);		//等待10ms,连续超过10ms没有接收到一个数据,则认为接收结束
+	//if(rxlen==RS485_RX_CNT&&rxlen)//接收到了数据,且接收完成了
+	//{
+	//	for(i=0;i<rxlen;i++)
+	//	{
+	//		buf[i]=RS485_RX_BUF[i];	
+	//	}		
+	//	*len=RS485_RX_CNT;	//记录本次数据长度
+	//	RS485_RX_CNT=0;		//清零
+	//}
+
+	static u32 times = 0;
+
+	if (USART2_RX_STA & 0x8000)
 	{
-		for(i=0;i<rxlen;i++)
+		u8 rxlen = RS485_RX_CNT;
+		USART2_RX_STA = 0;
+		u8 i = 0;
+		*len = 0;				//默认为0
+
+		
+
+		delay_us(50);		//等待10ms,连续超过10ms没有接收到一个数据,则认为接收结束
+		if (rxlen == RS485_RX_CNT && rxlen)//接收到了数据,且接收完成了
 		{
-			buf[i]=RS485_RX_BUF[i];	
-		}		
-		*len=RS485_RX_CNT;	//记录本次数据长度
-		RS485_RX_CNT=0;		//清零
+			frame_statistical.receive_frame_count++;
+			frame_statistical.previous_frame_serial_number = frame_statistical.current_frame_serial_number;
+			frame_statistical.current_frame_serial_number = (RS485_RX_BUF[7] << 8 | RS485_RX_BUF[8]);
+
+			for (i = 0; i < rxlen; i++)
+			{
+				buf[i] = RS485_RX_BUF[i];
+				RS485_RX_BUF[i] = 0;
+			}
+			*len = RS485_RX_CNT;	//记录本次数据长度
+
+
+			Processing_statistical_results(&frame_statistical);
+			RS485_RX_CNT = 0;		//清零
+		}
+		times = 0;
 	}
+	else {
+		times ++;
+		if (times>2000000) {
+			frame_statistical.receive_frame_count = 0;
+			printf("没有收到数据！\r\n");
+			times = 0;
+		}
+	}
+
 }
 
 
 void Processing_statistical_results(FrameStatisticalStruct *pframe_statistical) {
 
-	if (pframe_statistical->current_frame_serial_number< pframe_statistical->previous_frame_serial_number
-		|| pframe_statistical->current_frame_serial_number < pframe_statistical->frame_total) {
-	
-		pframe_statistical->receive_success_rate = pframe_statistical->receive_frame_count / pframe_statistical->frame_total;
+	float f_receive_frame_count = (float)pframe_statistical->receive_frame_count;
+	float f_frame_total = (float)pframe_statistical->frame_total;
 
-
+	if (pframe_statistical->current_frame_serial_number<= pframe_statistical->previous_frame_serial_number
+		|| frame_statistical.receive_frame_count == 0) {
+		pframe_statistical->receive_success_rate = (f_receive_frame_count-1) / f_frame_total;
+		printf("数据接收成功率 = %.1f %%\r\n", pframe_statistical->receive_success_rate*100);
+		pframe_statistical->receive_frame_count = 1;
 	}
 	else {
 	

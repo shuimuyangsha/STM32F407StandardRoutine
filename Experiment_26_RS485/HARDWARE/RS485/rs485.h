@@ -25,7 +25,7 @@ extern u8 RS485_RX_CNT;   			//接收到的数据长度
 
 #define FRAME_RX_BUFFER_LENGTH   9
 
-
+//#pragma pack (1)
 typedef struct frame_statistical_struct {
 	u16 frame_total;				//统计帧总数，即帧编号的最大值
 	u16 previous_frame_serial_number;		//帧编号
@@ -34,7 +34,7 @@ typedef struct frame_statistical_struct {
 	float receive_success_rate		//接收成功率
 	
 } FrameStatisticalStruct;
-
+//#pragma pack ()
 
 
 extern FrameStatisticalStruct frame_statistical;
