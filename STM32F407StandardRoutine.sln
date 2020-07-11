@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.852
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Experiment_51_USB_CardReader_Slave", "Experiment_51_USB_CardReader_Slave\Project\VS\Experiment_51_USB_CardReader_Slave\Experiment_51_USB_CardReader_Slave.vcxproj", "{A57FE12C-A1FA-4765-9AF3-A9DB3E66450D}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4E56EFA8-C957-4D24-84E5-6DC1254A1BB8}"
 	ProjectSection(SolutionItems) = preProject
 		..\..\..\嵌入式学习\资料\探索者F4\探索者F4 资料盘(A盘)\3，ALIENTEK探索者STM32F4开发板原理图\Explorer STM32F4_V2.2_SCH.pdf = ..\..\..\嵌入式学习\资料\探索者F4\探索者F4 资料盘(A盘)\3，ALIENTEK探索者STM32F4开发板原理图\Explorer STM32F4_V2.2_SCH.pdf
@@ -30,16 +28,14 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UCOSII_1_2_TaskCreate_Delet
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Experiment_26_RS485", "Experiment_26_RS485\Project\VS\Experiment_26_RS485\Experiment_26_RS485.vcxproj", "{76B07DF2-F797-4B52-8123-A6C6115301F7}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Experiment_51_USB_CardReader_Slave", "Experiment_51_USB_CardReader_Slave\Project\VS\Experiment_51_USB_CardReader_Slave\Experiment_51_USB_CardReader_Slave.vcxproj", "{AEC91715-D4B7-4492-A401-30D48BE15238}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|VisualGDB = Debug|VisualGDB
 		Release|VisualGDB = Release|VisualGDB
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A57FE12C-A1FA-4765-9AF3-A9DB3E66450D}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
-		{A57FE12C-A1FA-4765-9AF3-A9DB3E66450D}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
-		{A57FE12C-A1FA-4765-9AF3-A9DB3E66450D}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
-		{A57FE12C-A1FA-4765-9AF3-A9DB3E66450D}.Release|VisualGDB.Build.0 = Release|VisualGDB
 		{C7E685C0-93F3-4FD2-BF31-A772C7899138}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
 		{C7E685C0-93F3-4FD2-BF31-A772C7899138}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
 		{C7E685C0-93F3-4FD2-BF31-A772C7899138}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
@@ -76,6 +72,10 @@ Global
 		{76B07DF2-F797-4B52-8123-A6C6115301F7}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
 		{76B07DF2-F797-4B52-8123-A6C6115301F7}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
 		{76B07DF2-F797-4B52-8123-A6C6115301F7}.Release|VisualGDB.Build.0 = Release|VisualGDB
+		{AEC91715-D4B7-4492-A401-30D48BE15238}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{AEC91715-D4B7-4492-A401-30D48BE15238}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{AEC91715-D4B7-4492-A401-30D48BE15238}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{AEC91715-D4B7-4492-A401-30D48BE15238}.Release|VisualGDB.Build.0 = Release|VisualGDB
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

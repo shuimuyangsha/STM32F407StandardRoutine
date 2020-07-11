@@ -7,7 +7,7 @@
   </ToolchainVersion>
   <BspID>KEIL:Keil/STM32F4xx_DFP</BspID>
   <BspVersion>2.6.0</BspVersion>
-  <McuID>STM32F407ZE</McuID>
+  <McuID>STM32F407ZG</McuID>
   <MCUDefinitionFile>CMSIS\SVD\STM32F40x.svd</MCUDefinitionFile>
   <MCUProperties>
     <Entries />
@@ -27,7 +27,7 @@
     <AllDependencies>
       <ProjectDependency>
         <RelativePath>..\..\..\USER\USB_CardReader_SLAVE.uvprojx</RelativePath>
-        <Timestamp>131052024620000000</Timestamp>
+        <Timestamp>132389219275711381</Timestamp>
       </ProjectDependency>
     </AllDependencies>
     <RootDirectory>
@@ -204,26 +204,27 @@
     </RootDirectory>
     <Configurations>
       <ImportedConfiguration>
+        <IsStaticLibrary>false</IsStaticLibrary>
         <Settings>
           <IncludeDirectories>
-            <string>E:\VS_GDB\ARM\STM32F407StandardRoutine\Experiment_51_USB_CardReader_Slave\CORE</string>
-            <string>E:\VS_GDB\ARM\STM32F407StandardRoutine\Experiment_51_USB_CardReader_Slave\SYSTEM\delay</string>
-            <string>E:\VS_GDB\ARM\STM32F407StandardRoutine\Experiment_51_USB_CardReader_Slave\SYSTEM\sys</string>
-            <string>E:\VS_GDB\ARM\STM32F407StandardRoutine\Experiment_51_USB_CardReader_Slave\SYSTEM\usart</string>
-            <string>E:\VS_GDB\ARM\STM32F407StandardRoutine\Experiment_51_USB_CardReader_Slave\USER</string>
-            <string>E:\VS_GDB\ARM\STM32F407StandardRoutine\Experiment_51_USB_CardReader_Slave\HARDWARE\LED</string>
-            <string>E:\VS_GDB\ARM\STM32F407StandardRoutine\Experiment_51_USB_CardReader_Slave\HARDWARE\LCD</string>
-            <string>E:\VS_GDB\ARM\STM32F407StandardRoutine\Experiment_51_USB_CardReader_Slave\HARDWARE\KEY</string>
-            <string>E:\VS_GDB\ARM\STM32F407StandardRoutine\Experiment_51_USB_CardReader_Slave\HARDWARE\SRAM</string>
-            <string>E:\VS_GDB\ARM\STM32F407StandardRoutine\Experiment_51_USB_CardReader_Slave\HARDWARE\SDIO</string>
-            <string>E:\VS_GDB\ARM\STM32F407StandardRoutine\Experiment_51_USB_CardReader_Slave\MALLOC</string>
-            <string>E:\VS_GDB\ARM\STM32F407StandardRoutine\Experiment_51_USB_CardReader_Slave\HARDWARE\SPI</string>
-            <string>E:\VS_GDB\ARM\STM32F407StandardRoutine\Experiment_51_USB_CardReader_Slave\HARDWARE\W25QXX</string>
-            <string>E:\VS_GDB\ARM\STM32F407StandardRoutine\Experiment_51_USB_CardReader_Slave\USB\USB_APP</string>
-            <string>E:\VS_GDB\ARM\STM32F407StandardRoutine\Experiment_51_USB_CardReader_Slave\USB\STM32_USB_OTG_Driver\inc</string>
-            <string>E:\VS_GDB\ARM\STM32F407StandardRoutine\Experiment_51_USB_CardReader_Slave\USB\STM32_USB_Device_Library\Class\msc\inc</string>
-            <string>E:\VS_GDB\ARM\STM32F407StandardRoutine\Experiment_51_USB_CardReader_Slave\USB\STM32_USB_Device_Library\Core\inc</string>
-            <string>E:\VS_GDB\ARM\STM32F407StandardRoutine\Experiment_51_USB_CardReader_Slave\FWLIB\inc</string>
+            <string>E:\Code\EmbeddedSoftwareCode\STM32F407StandardRoutine\Experiment_51_USB_CardReader_Slave\CORE</string>
+            <string>E:\Code\EmbeddedSoftwareCode\STM32F407StandardRoutine\Experiment_51_USB_CardReader_Slave\SYSTEM\delay</string>
+            <string>E:\Code\EmbeddedSoftwareCode\STM32F407StandardRoutine\Experiment_51_USB_CardReader_Slave\SYSTEM\sys</string>
+            <string>E:\Code\EmbeddedSoftwareCode\STM32F407StandardRoutine\Experiment_51_USB_CardReader_Slave\SYSTEM\usart</string>
+            <string>E:\Code\EmbeddedSoftwareCode\STM32F407StandardRoutine\Experiment_51_USB_CardReader_Slave\USER</string>
+            <string>E:\Code\EmbeddedSoftwareCode\STM32F407StandardRoutine\Experiment_51_USB_CardReader_Slave\HARDWARE\LED</string>
+            <string>E:\Code\EmbeddedSoftwareCode\STM32F407StandardRoutine\Experiment_51_USB_CardReader_Slave\HARDWARE\LCD</string>
+            <string>E:\Code\EmbeddedSoftwareCode\STM32F407StandardRoutine\Experiment_51_USB_CardReader_Slave\HARDWARE\KEY</string>
+            <string>E:\Code\EmbeddedSoftwareCode\STM32F407StandardRoutine\Experiment_51_USB_CardReader_Slave\HARDWARE\SRAM</string>
+            <string>E:\Code\EmbeddedSoftwareCode\STM32F407StandardRoutine\Experiment_51_USB_CardReader_Slave\HARDWARE\SDIO</string>
+            <string>E:\Code\EmbeddedSoftwareCode\STM32F407StandardRoutine\Experiment_51_USB_CardReader_Slave\MALLOC</string>
+            <string>E:\Code\EmbeddedSoftwareCode\STM32F407StandardRoutine\Experiment_51_USB_CardReader_Slave\HARDWARE\SPI</string>
+            <string>E:\Code\EmbeddedSoftwareCode\STM32F407StandardRoutine\Experiment_51_USB_CardReader_Slave\HARDWARE\W25QXX</string>
+            <string>E:\Code\EmbeddedSoftwareCode\STM32F407StandardRoutine\Experiment_51_USB_CardReader_Slave\USB\USB_APP</string>
+            <string>E:\Code\EmbeddedSoftwareCode\STM32F407StandardRoutine\Experiment_51_USB_CardReader_Slave\USB\STM32_USB_OTG_Driver\inc</string>
+            <string>E:\Code\EmbeddedSoftwareCode\STM32F407StandardRoutine\Experiment_51_USB_CardReader_Slave\USB\STM32_USB_Device_Library\Class\msc\inc</string>
+            <string>E:\Code\EmbeddedSoftwareCode\STM32F407StandardRoutine\Experiment_51_USB_CardReader_Slave\USB\STM32_USB_Device_Library\Core\inc</string>
+            <string>E:\Code\EmbeddedSoftwareCode\STM32F407StandardRoutine\Experiment_51_USB_CardReader_Slave\FWLIB\inc</string>
           </IncludeDirectories>
           <PreprocessorMacros>
             <string>STM32F40_41xxx</string>

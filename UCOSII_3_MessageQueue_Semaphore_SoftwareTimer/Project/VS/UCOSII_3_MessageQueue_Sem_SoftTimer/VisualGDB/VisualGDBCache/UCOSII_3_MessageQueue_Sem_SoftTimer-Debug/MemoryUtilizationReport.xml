@@ -16,5 +16,10 @@
       <Used>65280</Used>
       <Total>65536</Total>
     </MemoryUtilization>
+    <MemoryUtilization>
+      <MemoryName>Unknown</MemoryName>
+      <Used>1044480</Used>
+      <Total>0</Total>
+    </MemoryUtilization>
   </Memories>
 </MemoryUtilizationReport>

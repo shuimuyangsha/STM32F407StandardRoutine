@@ -71,7 +71,6 @@
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\LWIP\lwip_app\web_server_demo\fsdata.c" />
     <ClCompile Include="..\..\..\USER\main.c" />
     <ClCompile Include="..\..\..\USER\stm32f4xx_it.c" />
     <ClCompile Include="..\..\..\USER\system_stm32f4xx.c" />

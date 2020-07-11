@@ -345,9 +345,6 @@
     <None Include="MCU.xml">
       <Filter>VisualGDB settings</Filter>
     </None>
-    <ClCompile Include="..\..\..\LWIP\lwip_app\web_server_demo\fsdata.c">
-      <Filter>Source files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\HARDWARE\ADC\adc.h">
@@ -662,9 +659,6 @@
     <ClInclude Include="..\..\..\LWIP\arch\sys_arch.h">
       <Filter>Header files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\USER\system_stm32f4xx.h">
-      <Filter>Header files</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\LWIP\lwip-1.4.1\src\include\lwip\tcp.h">
       <Filter>Header files</Filter>
     </ClInclude>
@@ -703,6 +697,9 @@
     </ClInclude>
     <ClInclude Include="..\..\..\USMART\usmart_str.h">
       <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\USER\system_stm32f4xx.h">
+      <Filter>Header files\SYSTEM</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
