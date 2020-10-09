@@ -3,23 +3,18 @@
   <Memories>
     <MemoryUtilization>
       <MemoryName>IROM1</MemoryName>
-      <Used>207104</Used>
-      <Total>1048576</Total>
+      <Used>10452</Used>
+      <Total>524288</Total>
     </MemoryUtilization>
     <MemoryUtilization>
       <MemoryName>IRAM1</MemoryName>
-      <Used>113164</Used>
+      <Used>2888</Used>
       <Total>131072</Total>
     </MemoryUtilization>
     <MemoryUtilization>
       <MemoryName>IRAM2</MemoryName>
-      <Used>65280</Used>
+      <Used>0</Used>
       <Total>65536</Total>
-    </MemoryUtilization>
-    <MemoryUtilization>
-      <MemoryName>Unknown</MemoryName>
-      <Used>217600</Used>
-      <Total>0</Total>
     </MemoryUtilization>
   </Memories>
 </MemoryUtilizationReport>
