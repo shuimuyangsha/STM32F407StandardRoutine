@@ -12,7 +12,7 @@
 //淘宝店铺：http://eboard.taobao.com  
 //广州市星翼电子科技有限公司  
 //作者：正点原子 @ALIENTEK
-    
+u32 stat_random[10] = {0}; //统计0到9出现的次数。
 int main(void)
 { 
 	u32 random;
@@ -55,6 +55,22 @@ int main(void)
 			LED0=!LED0;	//每200ms,翻转一次LED0 
 			random=RNG_Get_RandomRange(0,9);//获取[0,9]区间的随机数
 			LCD_ShowNum(30+8*16,210,random,1,16); //显示随机数
+
+/****************统计0 到 9 出现的次数 开始***********/
+			//switch (random) {
+			//case 0:stat_random[0]++; break;
+			//case 1:stat_random[1]++; break;
+			//case 2:stat_random[2]++; break;
+			//case 3:stat_random[3]++; break;
+			//case 4:stat_random[4]++; break;
+			//case 5:stat_random[5]++; break;
+			//case 6:stat_random[6]++; break;
+			//case 7:stat_random[7]++; break;
+			//case 8:stat_random[8]++; break;
+			//case 9:stat_random[9]++; break;
+			//default:break;
+			//}
+/****************统计0 到 9 出现的次数 结束***********/
 		 }
 		delay_ms(10);
 		t++;

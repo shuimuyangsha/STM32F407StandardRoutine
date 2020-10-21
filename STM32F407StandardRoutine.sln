@@ -32,6 +32,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Experiment_51_USB_CardReade
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Experiment_12_OLEDDisplay", "Experiment_12_OLEDDisplay\Project\VS\Experiment_12_OLEDDisplay\Experiment_12_OLEDDisplay.vcxproj", "{7C5B7BCC-FAA3-4342-A3F3-F9393301823F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Experiment_32_MPU6050InertialMeasurementSensor", "Experiment_32_MPU6050InertialMeasurementSensor\Project\VS\Experiment_32_MPU6050InertialMeasurementSensor\Experiment_32_MPU6050InertialMeasurementSensor.vcxproj", "{78CAED98-FF19-45EF-88B1-FB2889036816}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Experiment_16_RandomNumberGenerator", "Experiment_16_RandomNumberGenerator\Project\VS\Experiment_16_RandomNumberGenerator\Experiment_16_RandomNumberGenerator.vcxproj", "{0E908006-FBD1-40FF-BDE4-6660A364EFDF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|VisualGDB = Debug|VisualGDB
@@ -82,6 +86,14 @@ Global
 		{7C5B7BCC-FAA3-4342-A3F3-F9393301823F}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
 		{7C5B7BCC-FAA3-4342-A3F3-F9393301823F}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
 		{7C5B7BCC-FAA3-4342-A3F3-F9393301823F}.Release|VisualGDB.Build.0 = Release|VisualGDB
+		{78CAED98-FF19-45EF-88B1-FB2889036816}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{78CAED98-FF19-45EF-88B1-FB2889036816}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{78CAED98-FF19-45EF-88B1-FB2889036816}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{78CAED98-FF19-45EF-88B1-FB2889036816}.Release|VisualGDB.Build.0 = Release|VisualGDB
+		{0E908006-FBD1-40FF-BDE4-6660A364EFDF}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{0E908006-FBD1-40FF-BDE4-6660A364EFDF}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{0E908006-FBD1-40FF-BDE4-6660A364EFDF}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{0E908006-FBD1-40FF-BDE4-6660A364EFDF}.Release|VisualGDB.Build.0 = Release|VisualGDB
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

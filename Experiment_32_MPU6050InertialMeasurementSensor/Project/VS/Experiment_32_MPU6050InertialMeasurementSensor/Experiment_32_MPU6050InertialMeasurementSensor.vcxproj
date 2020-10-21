@@ -12,7 +12,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
-    <ProjectGuid>{7C5B7BCC-FAA3-4342-A3F3-F9393301823F}</ProjectGuid>
+    <ProjectGuid>{78CAED98-FF19-45EF-88B1-FB2889036816}</ProjectGuid>
     <BSP_ID>KEIL:Keil/STM32F4xx_DFP</BSP_ID>
     <BSP_VERSION>2.6.0</BSP_VERSION>
   </PropertyGroup>
@@ -40,7 +40,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..\..\..\CORE;..\..\..\SYSTEM\delay;..\..\..\SYSTEM\sys;..\..\..\SYSTEM\usart;..\..\..\USER;..\..\..\HARDWARE\LED;..\..\..\HARDWARE\OLED;..\..\..\FWLIB\inc;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\CORE;..\..\..\SYSTEM\delay;..\..\..\SYSTEM\sys;..\..\..\SYSTEM\usart;..\..\..\USER;..\..\..\HARDWARE\LED;..\..\..\HARDWARE\LCD;..\..\..\HARDWARE\IIC;..\..\..\HARDWARE\MPU6050;..\..\..\HARDWARE\MPU6050\eMPL;..\..\..\FWLIB\inc;..\..\..\HARDWARE\KEY;..\..\..\USMART;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>STM32F40_41xxx;USE_STDPERIPH_DRIVER;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalOptions />
       <CLanguageStandard />
@@ -50,13 +50,10 @@
       <AdditionalLinkerInputs>%(Link.AdditionalLinkerInputs)</AdditionalLinkerInputs>
       <AdditionalOptions />
     </Link>
-    <KeilSettingsContainer>
-      <KeilCPUType>Cortex-M4</KeilCPUType>
-    </KeilSettingsContainer>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..\..\..\CORE;..\..\..\SYSTEM\delay;..\..\..\SYSTEM\sys;..\..\..\SYSTEM\usart;..\..\..\USER;..\..\..\HARDWARE\LED;..\..\..\HARDWARE\OLED;..\..\..\FWLIB\inc;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\CORE;..\..\..\SYSTEM\delay;..\..\..\SYSTEM\sys;..\..\..\SYSTEM\usart;..\..\..\USER;..\..\..\HARDWARE\LED;..\..\..\HARDWARE\LCD;..\..\..\HARDWARE\IIC;..\..\..\HARDWARE\MPU6050;..\..\..\HARDWARE\MPU6050\eMPL;..\..\..\FWLIB\inc;..\..\..\HARDWARE\KEY;..\..\..\USMART;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>STM32F40_41xxx;USE_STDPERIPH_DRIVER;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalOptions />
       <CLanguageStandard />
@@ -77,21 +74,31 @@
     <ClCompile Include="..\..\..\USER\stm32f4xx_it.c" />
     <ClCompile Include="..\..\..\USER\system_stm32f4xx.c" />
     <ClCompile Include="..\..\..\HARDWARE\LED\led.c" />
-    <ClCompile Include="..\..\..\HARDWARE\OLED\oled.c" />
+    <ClCompile Include="..\..\..\HARDWARE\KEY\key.c" />
+    <ClCompile Include="..\..\..\HARDWARE\LCD\lcd.c" />
+    <ClCompile Include="..\..\..\HARDWARE\IIC\myiic.c" />
+    <ClCompile Include="..\..\..\HARDWARE\MPU6050\mpu6050.c" />
+    <ClCompile Include="..\..\..\HARDWARE\MPU6050\eMPL\inv_mpu.c" />
+    <ClCompile Include="..\..\..\HARDWARE\MPU6050\eMPL\inv_mpu_dmp_motion_driver.c" />
     <ClCompile Include="..\..\..\SYSTEM\delay\delay.c" />
     <ClCompile Include="..\..\..\SYSTEM\sys\sys.c" />
     <ClCompile Include="..\..\..\SYSTEM\usart\usart.c" />
     <ClCompile Include="..\..\..\CORE\startup_stm32f40_41xxx.s" />
     <ClCompile Include="..\..\..\FWLIB\src\misc.c" />
+    <ClCompile Include="..\..\..\FWLIB\src\stm32f4xx_fsmc.c" />
     <ClCompile Include="..\..\..\FWLIB\src\stm32f4xx_gpio.c" />
     <ClCompile Include="..\..\..\FWLIB\src\stm32f4xx_rcc.c" />
-    <ClCompile Include="..\..\..\FWLIB\src\stm32f4xx_usart.c" />
     <ClCompile Include="..\..\..\FWLIB\src\stm32f4xx_syscfg.c" />
+    <ClCompile Include="..\..\..\FWLIB\src\stm32f4xx_usart.c" />
+    <ClCompile Include="..\..\..\FWLIB\src\stm32f4xx_tim.c" />
+    <ClCompile Include="..\..\..\USMART\usmart.c" />
+    <ClCompile Include="..\..\..\USMART\usmart_config.c" />
+    <ClCompile Include="..\..\..\USMART\usmart_str.c" />
     <None Include="mcu.props" />
     <None Include="..\..\..\readme.txt" />
     <ClInclude Include="$(BSP_ROOT)\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h" />
-    <None Include="Experiment_12_OLEDDisplay-Debug.vgdbsettings" />
-    <None Include="Experiment_12_OLEDDisplay-Release.vgdbsettings" />
+    <None Include="Experiment_32_MPU6050InertialMeasurementSensor-Debug.vgdbsettings" />
+    <None Include="Experiment_32_MPU6050InertialMeasurementSensor-Release.vgdbsettings" />
     <None Include="MCU.xml" />
   </ItemGroup>
 </Project>
