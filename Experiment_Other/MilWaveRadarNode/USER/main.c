@@ -4,7 +4,7 @@
 #include "led.h"
 #include "beep.h"
 #include "key.h"
-
+#include "usart6.h"
 
 
 int main(void)
@@ -16,6 +16,7 @@ int main(void)
 	NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);//设置系统中断优先级分组2
 	delay_init(168);		//延时初始化 
 	uart_init(115200);	//串口初始化波特率为115200
+	Usart6_Init(921600);		//串口初始化波特率为921600
 	LED_Init();		  		//初始化与LED连接的硬件接口  
 	while(1)
 	{

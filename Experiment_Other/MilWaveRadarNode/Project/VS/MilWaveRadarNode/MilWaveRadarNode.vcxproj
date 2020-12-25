@@ -40,15 +40,16 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..\..\..\CORE;..\..\..\SYSTEM\delay;..\..\..\SYSTEM\sys;..\..\..\SYSTEM\usart;..\..\..\FWLIB\STM32F4xx_StdPeriph_Driver\inc;..\..\..\USER;..\..\..\HARDWARE\LED;..\..\..\HARDWARE\BEEP;..\..\..\HARDWARE\KEY;..\..\..\FWLIB\inc;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\CORE;..\..\..\SYSTEM\delay;..\..\..\SYSTEM\sys;..\..\..\SYSTEM\usart;..\..\..\FWLIB\STM32F4xx_StdPeriph_Driver\inc;..\..\..\USER;..\..\..\HARDWARE\LED;..\..\..\HARDWARE\BEEP;..\..\..\HARDWARE\KEY;..\..\..\FWLIB\inc;../../../HARDWARE/USART6;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>STM32F40_41xxx;USE_STDPERIPH_DRIVER;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalOptions />
       <CLanguageStandard />
       <CPPLanguageStandard />
     </ClCompile>
     <Link>
-      <AdditionalLinkerInputs>%(Link.AdditionalLinkerInputs)</AdditionalLinkerInputs>
+      <AdditionalLinkerInputs>;%(Link.AdditionalLinkerInputs)</AdditionalLinkerInputs>
       <AdditionalOptions />
+      <LinkerScript />
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
@@ -70,6 +71,7 @@
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\HARDWARE\USART6\usart6.c" />
     <ClCompile Include="..\..\..\USER\main.c" />
     <ClCompile Include="..\..\..\USER\stm32f4xx_it.c" />
     <ClCompile Include="..\..\..\USER\system_stm32f4xx.c" />

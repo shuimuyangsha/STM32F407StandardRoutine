@@ -123,5 +123,8 @@
     <None Include="MCU.xml">
       <Filter>VisualGDB settings</Filter>
     </None>
+    <ClCompile Include="..\..\..\HARDWARE\USART6\usart6.c">
+      <Filter>Source files\HARDWARE</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
