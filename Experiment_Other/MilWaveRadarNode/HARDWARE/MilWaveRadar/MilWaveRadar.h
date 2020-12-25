@@ -104,8 +104,15 @@ typedef struct radar_struct {
 extern RadarStruct radar;
 extern RadarObjectStruct radar_object[30];
 
+extern u16 numpoint ;
+
+extern u16 radarX[500];
+extern u16 radarY[500];
+
 extern u16 radarX0, radarX1, radarX2, radarX3, radarX4, radarX5;
 extern u16 radarY0, radarY1, radarY2, radarY3, radarY4, radarY5;
+
+
 
 #endif
 

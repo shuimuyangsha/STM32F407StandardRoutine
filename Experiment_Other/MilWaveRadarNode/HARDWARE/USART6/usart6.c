@@ -185,6 +185,25 @@ void USART6_IRQHandler(void)
 			//
 			//}
 
+			for (i = 0; i < radar.numdetedobj; i++) {
+				//radar_object[i * 12 + 0].rIdx = recn_buf[52 + i * 12 + 0] | (recn_buf[52 + i * 12 + 1] << 8);
+				//radar_object[i * 12 + 1].dIdx = recn_buf[52 + i * 12 + 2] | (recn_buf[52 + i * 12 + 3] << 8);
+				//radar_object[i * 12 + 2].peakVal = recn_buf[52 + i * 12 + 4] | (recn_buf[52 + i * 12 + 5] << 8);
+				
+				
+
+				
+				
+				radarX[numpoint] = recn_buf[52 + i * 12 + 6] | (recn_buf[52 + i * 12 + 7] << 8);
+				radarY[numpoint] = recn_buf[52 + i * 12 + 8] | (recn_buf[52 + i * 12 + 9] << 8);
+				numpoint++;
+				if (numpoint > 500) {
+					numpoint = 0;
+				}
+				//radar_object[i * 12 + 5].z = recn_buf[52 + i * 12 + 10] | (recn_buf[52 + i * 12 + 11] << 8);
+			
+			}
+
 			//radarX0, radarX1, radarX2, radarX3, radarX4, radarX5;
 			//radarY0, radarY1, radarY2, radarY3, radarY4, radarY5;
 			radarX0 = recn_buf[52 + 0 * 12 + 6] | (recn_buf[52 + 0 * 12 + 7] << 8);
