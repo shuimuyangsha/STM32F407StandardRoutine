@@ -15,6 +15,12 @@
 //作者：正点原子 @ALIENTEK
 
 
+int16_t uCDebug_vel = 200;
+int16_t uCDebug_yaw = 200;
+int16_t uCDebug_ang = 0;
+
+int16_t uCDebug_key = 0;
+int16_t uCDebug_keyflag = 0;
 int main(void)
 { 
  
@@ -27,8 +33,21 @@ int main(void)
 	LED_Init();		  		//初始化与LED连接的硬件接口  
 
 	Motor_Init();
+	
 	while(1)
 	{
+		
+		Set_Motor_Speed(uCDebug_vel,uCDebug_yaw,uCDebug_ang);
+		delay_ms(100);
+		
+//		if(uCDebug_key ==1)
+//		{
+
+//			Motor_Power_On();//电机上电
+//		
+//		}
+		
+		
 //		if(USART_RX_STA&0x8000)
 //		{					   
 //			len=USART_RX_STA&0x3fff;//得到此次接收到的数据长度
