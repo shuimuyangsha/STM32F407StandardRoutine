@@ -3,6 +3,8 @@
 
 #include "sys.h"
 
+#define  TOTAL_POINT 20
+
 typedef struct radar_object_struct {
 	u16	rIdx;
 	u16	dIdx;
@@ -106,8 +108,8 @@ extern RadarObjectStruct radar_object[30];
 
 extern u16 numpoint ;
 
-extern u16 radarX[500];
-extern u16 radarY[500];
+extern u16 radarX[TOTAL_POINT];
+extern u16 radarY[TOTAL_POINT];
 
 extern u16 radarX0, radarX1, radarX2, radarX3, radarX4, radarX5;
 extern u16 radarY0, radarY1, radarY2, radarY3, radarY4, radarY5;

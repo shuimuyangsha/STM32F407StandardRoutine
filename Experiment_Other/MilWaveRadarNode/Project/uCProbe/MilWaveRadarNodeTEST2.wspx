@@ -2,35 +2,25 @@
 <workspace>
   <symbolbrowser>
     <symbolfiles>
-      <symbolfile Filepath="..\..\..\..\..\VisualGDB\Debug\MilWaveRadarNode.elf" ExternallyAdded="false" Core_Identifier="Core0" Device_Identifier="Device0" FileType="ELF_File" />
+      <symbolfile Filepath="..\..\..\USER\USART.uvprojx" ExternallyAdded="true" Core_Identifier="Core0" Device_Identifier="Device0" FileType="ELF_File" />
     </symbolfiles>
   </symbolbrowser>
   <screens SelectedScreenId="DataScreen1">
     <screen RegisteredName="DataScreen1" ScreenHeader="DataScreen1" ScreenType="DataScreen" />
   </screens>
   <nodes>
-    <node ScreenId="DataScreen1" NodeId="CustomDiagramNode1" OffsetX="490" OffsetY="1090" AllowMove="true" AllowResize="false" AllowRotate="false" AllowSelect="true" Width="600" Height="350" ZIndex="0" IsLocked="false" RotateAngle="0" Pivot="0.5,0.5" UpdateWhenVisible="false" IsWritableControl="false" WritableValue="0" IsDrawingShape="false" ShapeTypeStr="" RibbonTool="None">
+    <node ScreenId="DataScreen1" NodeId="CustomDiagramNode1" OffsetX="380.79999999999995" OffsetY="55.199999999999989" AllowMove="true" AllowResize="false" AllowRotate="false" AllowSelect="true" Width="600" Height="350" ZIndex="0" IsLocked="false" RotateAngle="0" Pivot="0.5,0.5" UpdateWhenVisible="false" IsWritableControl="false" WritableValue="0" IsDrawingShape="false" ShapeTypeStr="" RibbonTool="None">
       <innercontent>
         <content ControlType="CustomXYChart" Type="CustomXYGraph">
-          <definitions Width="600" Height="350" XAxisFrom="0" XAxisTo="100" XAxisStep="10" UseLogarithmicScaleForXAxis="false" XAxisTitle="" ShowMinorTicksForXAxis="true" ShowMajorTicksForXAxis="true" ShowMinorGridlinesForXAxis="true" ShowMajorGridlinesForXAxis="true" ShowGridStripesForXAxis="true" YAxisFrom="0" YAxisTo="100" YAxisStep="10" UseLogarithmicScaleForYAxis="false" YAxisTitle="" ShowMinorTicksForYAxis="true" ShowMajorTicksForYAxis="true" ShowMinorGridlinesForYAxis="true" ShowMajorGridlinesForYAxis="true" ShowGridStripesForYAxis="false" ChartTitle="X vs Y Chart" UseIndexTable="false" UseIndexOfXSymbol_ForYValue="false" UseIndexOfYSymbol_ForXValue="false" PlotMode="Plot" BufferSize="200" PlotModeType="Strip" EraseTrace="false" Color="#FF0000FF" ColorBrush="#FF0000FF" ShowTooltip="true" ShowArea="false" ShowPoints="true" ShowLine="false" />
+          <definitions Width="600" Height="350" XAxisFrom="-1000" XAxisTo="1000" XAxisStep="10" UseLogarithmicScaleForXAxis="false" XAxisTitle="aaa" ShowMinorTicksForXAxis="true" ShowMajorTicksForXAxis="true" ShowMinorGridlinesForXAxis="true" ShowMajorGridlinesForXAxis="true" ShowGridStripesForXAxis="true" YAxisFrom="-1000" YAxisTo="1000" YAxisStep="10" UseLogarithmicScaleForYAxis="false" YAxisTitle="bbb" ShowMinorTicksForYAxis="true" ShowMajorTicksForYAxis="true" ShowMinorGridlinesForYAxis="true" ShowMajorGridlinesForYAxis="true" ShowGridStripesForYAxis="false" ChartTitle="X vs Y Chart" UseIndexTable="false" UseIndexOfXSymbol_ForYValue="false" UseIndexOfYSymbol_ForXValue="false" PlotMode="Burst" BufferSize="200" PlotModeType="Strip" EraseTrace="false" Color="#FF0000FF" ColorBrush="#FF0000FF" ShowTooltip="true" ShowArea="false" ShowPoints="true" ShowLine="false" />
           <symbolseries>
-            <serie SymbolPathForXAxis="radarX0" SymbolPathForYAxis="radarY0" />
+            <serie SymbolPathForXAxis="debugX" SymbolPathForYAxis="debugY" />
           </symbolseries>
         </content>
       </innercontent>
       <symbols>
-        <symbol path="radarX0" IsAnArrayElement="false" ElementIndex="0" IsCustomSymbol="false" Mask_Enabled="false" Mask_Start_Bit="0" Mask_End_Bit="0" />
-        <symbol path="radarY0" IsAnArrayElement="false" ElementIndex="0" IsCustomSymbol="false" Mask_Enabled="false" Mask_Start_Bit="0" Mask_End_Bit="0" />
-      </symbols>
-    </node>
-    <node ScreenId="DataScreen1" NodeId="CustomDiagramNode2" OffsetX="-170" OffsetY="1110" AllowMove="true" AllowResize="false" AllowRotate="false" AllowSelect="true" Width="600" Height="350" ZIndex="1" IsLocked="false" RotateAngle="0" Pivot="0.5,0.5" UpdateWhenVisible="false" IsWritableControl="false" WritableValue="0" IsDrawingShape="false" ShapeTypeStr="" RibbonTool="None">
-      <innercontent>
-        <content ControlType="XYBar" Type="Graph5">
-          <definitions Width="600" Height="350" TypeOfXAxisValues="SampleNumber" TypeOfUpdateStyle="Bar" MaxNumSamples="500" IsLegendVisible="true" ChartType="BarChart" EraseTrace="false" XAxisStep="20" PrimaryYAxisFrom="0" PrimaryYAxisTo="1500" PrimaryYAxisStep="10" ScalingFactor="1" ScalingOffset="0" ScalingFormat="" DecimalPlaces="2" LeadingZeroes="0" LegendPosition="InsideTopRight" ShowLegend="true" ShowTooltip="true" ShowAnnotation="true" Show_YAxisLabels="true" YAutoRange="false" YAxisFrom="0" YAxisTo="1500" Show_XAxisLabels="true" DataPointWidth="0.5" ArrayLength="500" WholeArray="true" UserStartIndex="0" UserEndIndex="499" IsArray="true" AllBarsSameColor="#FFFF0000" UseSameColor="true" ColorsRangeBegin="0" ColorsRangeEnd="0" BarColorWithin="#FF008000" BarColorAbove="#FFFF0000" BarColorBelow="#FFFFFF00" FontColor="#FF000000" LineColor="#FF0000FF" FontColorAutomatically="true" />
-        </content>
-      </innercontent>
-      <symbols>
-        <symbol path="radarY" IsAnArrayElement="false" ElementIndex="0" IsCustomSymbol="false" Mask_Enabled="false" Mask_Start_Bit="0" Mask_End_Bit="0" />
+        <symbol path="debugX" IsAnArrayElement="false" ElementIndex="0" IsCustomSymbol="false" Mask_Enabled="false" Mask_Start_Bit="0" Mask_End_Bit="0" />
+        <symbol path="debugY" IsAnArrayElement="false" ElementIndex="0" IsCustomSymbol="false" Mask_Enabled="false" Mask_Start_Bit="0" Mask_End_Bit="0" />
       </symbols>
     </node>
   </nodes>
@@ -57,7 +47,7 @@
             <Height>0</Height>
           </PreviousContainerDesiredSize>
           <PreviousDesiredWidthInDockedMode>90</PreviousDesiredWidthInDockedMode>
-          <PreviousDesiredHeightInDockedMode>158.39999999999992</PreviousDesiredHeightInDockedMode>
+          <PreviousDesiredHeightInDockedMode>360</PreviousDesiredHeightInDockedMode>
           <Name>usrSymbolBrowser</Name>
           <ShowTopmostMenuItem>false</ShowTopmostMenuItem>
           <TopMost>false</TopMost>
@@ -68,7 +58,7 @@
           <TargetDocked />
           <TargetFloating />
           <DesiredWidthInDockedMode>1259.2</DesiredWidthInDockedMode>
-          <DesiredHeightInDockedMode>158.4</DesiredHeightInDockedMode>
+          <DesiredHeightInDockedMode>360</DesiredHeightInDockedMode>
           <DesiredWidthInFloatingMode>90</DesiredWidthInFloatingMode>
           <DesiredHeightInFloatingMode>360</DesiredHeightInFloatingMode>
           <NoDock>false</NoDock>
@@ -78,7 +68,7 @@
           <IsActiveWindow>false</IsActiveWindow>
           <CanSerialize>true</CanSerialize>
           <WindowRect />
-          <TabGroupName>38413446</TabGroupName>
+          <TabGroupName />
           <IsTabGroupOwner>false</IsTabGroupOwner>
           <SideTabOrder>0</SideTabOrder>
           <IndexInDockMode>3</IndexInDockMode>
@@ -93,7 +83,7 @@
           <AllowMDIResize>true</AllowMDIResize>
           <TDIGroupOrientation>Horizontal</TDIGroupOrientation>
           <WayOfTDIGroup />
-          <DockForSide>Bottom</DockForSide>
+          <DockForSide>Left</DockForSide>
           <PreviousIndexInDockMode>0</PreviousIndexInDockMode>
           <PreviousSideInDockMode>Left</PreviousSideInDockMode>
           <DoShift>false</DoShift>
@@ -160,7 +150,7 @@
           <IsActiveWindow>false</IsActiveWindow>
           <CanSerialize>true</CanSerialize>
           <WindowRect />
-          <TabGroupName>28055495</TabGroupName>
+          <TabGroupName />
           <IsTabGroupOwner>false</IsTabGroupOwner>
           <SideTabOrder>0</SideTabOrder>
           <IndexInDockMode>2</IndexInDockMode>
@@ -177,7 +167,7 @@
           <WayOfTDIGroup />
           <DockForSide>Left</DockForSide>
           <PreviousIndexInDockMode>0</PreviousIndexInDockMode>
-          <PreviousSideInDockMode>Top</PreviousSideInDockMode>
+          <PreviousSideInDockMode>Left</PreviousSideInDockMode>
           <DoShift>false</DoShift>
           <SideRelativetoContainer>Left</SideRelativetoContainer>
           <TabParent />
@@ -206,7 +196,7 @@
           <PreviousContainerWidth>90</PreviousContainerWidth>
           <TargetAutoHide />
           <SplitPanelOffset>0</SplitPanelOffset>
-          <IsSwapped>true</IsSwapped>
+          <IsSwapped>false</IsSwapped>
           <IsPinned>false</IsPinned>
           <ShowPin>false</ShowPin>
           <AllowPin>false</AllowPin>
@@ -242,7 +232,7 @@
           <IsActiveWindow>false</IsActiveWindow>
           <CanSerialize>true</CanSerialize>
           <WindowRect />
-          <TabGroupName>40936054</TabGroupName>
+          <TabGroupName />
           <IsTabGroupOwner>false</IsTabGroupOwner>
           <SideTabOrder>0</SideTabOrder>
           <IndexInDockMode>1</IndexInDockMode>
@@ -288,7 +278,7 @@
           <PreviousContainerWidth>90</PreviousContainerWidth>
           <TargetAutoHide />
           <SplitPanelOffset>0</SplitPanelOffset>
-          <IsSwapped>true</IsSwapped>
+          <IsSwapped>false</IsSwapped>
           <IsPinned>false</IsPinned>
           <ShowPin>false</ShowPin>
           <AllowPin>false</AllowPin>

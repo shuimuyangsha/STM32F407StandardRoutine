@@ -6,10 +6,17 @@
 #include "key.h"
 #include "usart6.h"
 #include "MilWaveRadar.h"
+#include "math.h"
+
+extern u16 debugX[8] = {1,2,3,4,5};
+extern u16 debugY[8] = {1,2,3,4,5};
+
+u16 debugX2 = 0;
+u16 debugY2 = 0;
 
 int main(void)
 { 
- 
+	u16 i;
 	u8 t;
 	u8 len;	
 	u16 times=0;  
@@ -20,29 +27,49 @@ int main(void)
 	LED_Init();		  		//初始化与LED连接的硬件接口  
 	while(1)
 	{
-		if(USART_RX_STA&0x8000)
-		{					   
-			len=USART_RX_STA&0x3fff;//得到此次接收到的数据长度
-			printf("\r\n您发送的消息为:\r\n");
-			for(t=0;t<len;t++)
-			{
-				USART_SendData(USART1, USART_RX_BUF[t]);         //向串口1发送数据
-				while(USART_GetFlagStatus(USART1,USART_FLAG_TC)!=SET);//等待发送结束
-			}
-			printf("\r\n\r\n");//插入换行
-			USART_RX_STA=0;
-		}else
-		{
-			times++;
-			if(times%5000==0)
-			{
-				printf("\r\nALIENTEK 探索者STM32F407开发板 串口实验\r\n");
-				printf("正点原子@ALIENTEK\r\n\r\n\r\n");
-			}
-			if(times%200==0)printf("请输入数据,以回车键结束\r\n");  
-			if(times%30==0)LED0=!LED0;//闪烁LED,提示系统正在运行.
-			delay_ms(10);   
-		}
+		debugX[0] = 100;
+		debugY[0] = sin(debugX[0]);
+		debugX[1] = 200;
+		debugY[1] = sin(debugX[1]);
+		debugX[2] = 300;
+		debugY[2] = sin(debugX[2]);
+		//debugX[4] = 400;
+		//debugY[4] = 400;
+		//debugX[5] = 500;
+		//debugY[5] = 500;
+		debugX2 = i++;
+		debugY2 = debugX2+10;
+		//for (i = 0; i < 10;i++) {
+
+		//	debugX[i] = i*10.3;
+		//	debugY[i] = (i + 3)*10.3;
+		//	delay_ms(2000);
+		//}
+		delay_ms(100);
+
+		//if(USART_RX_STA&0x8000)
+		//{					   
+		//	len=USART_RX_STA&0x3fff;//得到此次接收到的数据长度
+		//	printf("\r\n您发送的消息为:\r\n");
+		//	for(t=0;t<len;t++)
+		//	{
+		//		USART_SendData(USART1, USART_RX_BUF[t]);         //向串口1发送数据
+		//		while(USART_GetFlagStatus(USART1,USART_FLAG_TC)!=SET);//等待发送结束
+		//	}
+		//	printf("\r\n\r\n");//插入换行
+		//	USART_RX_STA=0;
+		//}else
+		//{
+		//	times++;
+		//	if(times%5000==0)
+		//	{
+		//		printf("\r\nALIENTEK 探索者STM32F407开发板 串口实验\r\n");
+		//		printf("正点原子@ALIENTEK\r\n\r\n\r\n");
+		//	}
+		//	if(times%200==0)printf("请输入数据,以回车键结束\r\n");  
+		//	if(times%30==0)LED0=!LED0;//闪烁LED,提示系统正在运行.
+		//	delay_ms(10);   
+		//}
 	}
 }
 

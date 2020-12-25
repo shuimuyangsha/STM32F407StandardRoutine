@@ -197,7 +197,7 @@ void USART6_IRQHandler(void)
 				radarX[numpoint] = recn_buf[52 + i * 12 + 6] | (recn_buf[52 + i * 12 + 7] << 8);
 				radarY[numpoint] = recn_buf[52 + i * 12 + 8] | (recn_buf[52 + i * 12 + 9] << 8);
 				numpoint++;
-				if (numpoint > 500) {
+				if (numpoint > TOTAL_POINT) {
 					numpoint = 0;
 				}
 				//radar_object[i * 12 + 5].z = recn_buf[52 + i * 12 + 10] | (recn_buf[52 + i * 12 + 11] << 8);
