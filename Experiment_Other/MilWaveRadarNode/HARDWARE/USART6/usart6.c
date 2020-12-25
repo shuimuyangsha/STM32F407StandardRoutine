@@ -130,6 +130,7 @@ void USART6_IRQHandler(void)
 	{
 		res = USART_ReceiveData(USART6);
 
+
 		if (Usart6_Recv_Status < 500) {
 		
 			recn_buf[Usart6_Recv_Status] = res;
@@ -139,21 +140,88 @@ void USART6_IRQHandler(void)
 			Usart6_Recv_Status = 0;
 		}
 
+		if (Usart6_Recv_Status == 3) {
+			if (recn_buf[0] != 0x02 ||
+				recn_buf[1] != 0x01 ||
+				recn_buf[2] != 0x04
+				//recn_buf[3] != 0x03 ||
+				//recn_buf[4] != 0x06 ||
+				//recn_buf[5] != 0x05 ||
+				//recn_buf[6] != 0x07 ||
+				//recn_buf[7] != 0x08
+				) {
+
+				Usart6_Recv_Status = 0;
+			}
+		}
+		if (Usart6_Recv_Status == 15) {
+
+			radar.tatalpacketlen = recn_buf[12];
+		}
+
+		if (Usart6_Recv_Status > 15 &&
+			radar.tatalpacketlen == Usart6_Recv_Status) {
+			radar.version = recn_buf[8] | recn_buf[9] << 8 | recn_buf[10] << 16 | recn_buf[11] << 24;
+			radar.frameNumber = recn_buf[20] | recn_buf[21] << 8 | recn_buf[22] << 16 | recn_buf[23] << 24;
+
+
+			radar.timecpucycles = recn_buf[24] | recn_buf[25] << 8 | recn_buf[26] << 16 | recn_buf[27]<<24;
+
+			radar.numdetedobj = recn_buf[48] | (recn_buf[49] << 8);
+			radar.xyzoutputoformat = recn_buf[50] | (recn_buf[51] << 8);
+
+
+			radar.object.rIdx = recn_buf[12];
+
+/*******************雷达对象点数据转存*******************/
+			//for (i = 0; i < radar.numdetedobj; i++) {
+			//	radar_object[i * 12 + 0].rIdx = recn_buf[52 + i * 12 + 0] | (recn_buf[52 + i * 12 + 1] << 8);
+			//	radar_object[i * 12 + 1].dIdx = recn_buf[52 + i * 12 + 2] | (recn_buf[52 + i * 12 + 3] << 8);
+			//	radar_object[i * 12 + 2].peakVal = recn_buf[52 + i * 12 + 4] | (recn_buf[52 + i * 12 + 5] << 8);
+
+			//	radar_object[i * 12 + 3].x = recn_buf[52 + i * 12 + 6] | (recn_buf[52 + i * 12 + 7] << 8);
+			//	radar_object[i * 12 + 4].y = recn_buf[52 + i * 12 + 8] | (recn_buf[52 + i * 12 + 9] << 8);
+			//	radar_object[i * 12 + 5].z = recn_buf[52 + i * 12 + 10] | (recn_buf[52 + i * 12 + 11] << 8);
+			//
+			//}
+
+			//radarX0, radarX1, radarX2, radarX3, radarX4, radarX5;
+			//radarY0, radarY1, radarY2, radarY3, radarY4, radarY5;
+			radarX0 = recn_buf[52 + 0 * 12 + 6] | (recn_buf[52 + 0 * 12 + 7] << 8);
+			radarY0 = recn_buf[52 + 0 * 12 + 8] | (recn_buf[52 + 0 * 12 + 9] << 8);
+/*******************雷达对象点数据转存*******************/
 
 
 
-		//if ((Usart6_Recv_Status == 0 && res != 0x55) || (Usart6_Recv_Status == 1 && res != 0xFF)
+			
+			Usart6_Recv_Status = 0;
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+		//if ((Usart6_Recv_Status == 0 && res != 0x02) || (Usart6_Recv_Status == 1 && res != 0x01)
 		//	|| (Usart6_Recv_Status == (USART6_DATA_LENGTH-2) && res != 0xFF)
 		//	|| (Usart6_Recv_Status == (USART6_DATA_LENGTH-1) && res != 0xFE))
 		//{
 		//	Usart6_Recv_Status = 0;
-		//	if (res == 0x55)
+		//	if (res == 0x02)
 		//	{
 		//		recn_buf[Usart6_Recv_Status] = res;
 		//		++Usart6_Recv_Status;
 		//	}
 		//	goto end;
 		//}
+
+
 		//if (Usart6_Recv_Status == (USART6_DATA_LENGTH-3))
 		//{
 		//	sum = 0;

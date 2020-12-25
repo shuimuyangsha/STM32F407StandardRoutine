@@ -126,5 +126,13 @@
     <ClCompile Include="..\..\..\HARDWARE\USART6\usart6.c">
       <Filter>Source files\HARDWARE</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\HARDWARE\MilWaveRadar\MilWaveRadar.c">
+      <Filter>Source files\HARDWARE</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\uCProbe\MilWaveRadarNode.wspx">
+      <Filter>Resource files</Filter>
+    </None>
   </ItemGroup>
 </Project>
