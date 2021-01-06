@@ -40,6 +40,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LZ_Classis", "Experiment_Ot
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MilWaveRadarNode", "Experiment_Other\MilWaveRadarNode\Project\VS\MilWaveRadarNode\MilWaveRadarNode.vcxproj", "{310A97B3-6D34-4B18-9C8D-F98313076594}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LwIP03_RAW_UDP", "Experiment_Extension\LwIP\LwIP03_RAW_UDP\Project\VS\LwIP03_RAW_UDP\LwIP03_RAW_UDP.vcxproj", "{1DDB6AF6-9E3C-432A-8460-99A1C01723FE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Experiment_59_BootRoutine", "Experiment_59_BootRoutine\Project\VS\Experiment_59_BootRoutine\Experiment_59_BootRoutine.vcxproj", "{FC1D823C-50E0-45E1-830D-DD5D71374E26}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|VisualGDB = Debug|VisualGDB
@@ -106,6 +110,14 @@ Global
 		{310A97B3-6D34-4B18-9C8D-F98313076594}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
 		{310A97B3-6D34-4B18-9C8D-F98313076594}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
 		{310A97B3-6D34-4B18-9C8D-F98313076594}.Release|VisualGDB.Build.0 = Release|VisualGDB
+		{1DDB6AF6-9E3C-432A-8460-99A1C01723FE}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{1DDB6AF6-9E3C-432A-8460-99A1C01723FE}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{1DDB6AF6-9E3C-432A-8460-99A1C01723FE}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{1DDB6AF6-9E3C-432A-8460-99A1C01723FE}.Release|VisualGDB.Build.0 = Release|VisualGDB
+		{FC1D823C-50E0-45E1-830D-DD5D71374E26}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{FC1D823C-50E0-45E1-830D-DD5D71374E26}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{FC1D823C-50E0-45E1-830D-DD5D71374E26}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{FC1D823C-50E0-45E1-830D-DD5D71374E26}.Release|VisualGDB.Build.0 = Release|VisualGDB
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
