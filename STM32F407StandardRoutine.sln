@@ -44,6 +44,24 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LwIP03_RAW_UDP", "Experimen
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Experiment_59_BootRoutine", "Experiment_59_BootRoutine\Project\VS\Experiment_59_BootRoutine\Experiment_59_BootRoutine.vcxproj", "{FC1D823C-50E0-45E1-830D-DD5D71374E26}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LwIP01_LWIP_NoOS_Porting", "Experiment_Extension\LwIP\LwIP01_LWIP_NoOS_Porting\Project\VS\LwIP01_LWIP_NoOS_Porting\LwIP01_LWIP_NoOS_Porting.vcxproj", "{10727D7D-B684-42CD-8D82-86E307CB2394}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LwIP02_LWIP_UCOS_Porting", "Experiment_Extension\LwIP\LwIP02_LWIP_UCOS_Porting\Project\VS\LwIP02_LWIP_UCOS_Porting\LwIP02_LWIP_UCOS_Porting.vcxproj", "{8A90D23F-8B56-4E17-A371-49FB2CFFDB5A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LwIP04_RAW_TCP_Client", "Experiment_Extension\LwIP\LwIP04_RAW_TCP_Client\Project\VS\LwIP04_RAW_TCP_Client\LwIP04_RAW_TCP_Client.vcxproj", "{DEBCC48D-04EA-40A2-8430-BFCD4B9799C5}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LwIP05_RAW_TCP_Server", "Experiment_Extension\LwIP\LwIP05_RAW_TCP_Server\Project\VS\LwIP05_RAW_TCP_Server\LwIP05_RAW_TCP_Server.vcxproj", "{4F4994A8-D8CD-41AD-B5D3-00982CFFBB16}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LwIP06_RAW_WebServer", "Experiment_Extension\LwIP\LwIP06_RAW_WebServer\Project\VS\LwIP06_RAW_WebServer\LwIP06_RAW_WebServer.vcxproj", "{5984BE73-2937-41F9-9EF8-C292D8763EB5}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LwIP07_NETCONN_UDP", "Experiment_Extension\LwIP\LwIP07_NETCONN_UDP\Project\VS\LwIP07_NETCONN_UDP\LwIP07_NETCONN_UDP.vcxproj", "{BD462648-B96C-4A87-A7D5-0480021CE6E3}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LwIP08_NETCONN_TCP_Client", "Experiment_Extension\LwIP\LwIP08_NETCONN_TCP_Client\Project\VS\LwIP08_NETCONN_TCP_Client\LwIP08_NETCONN_TCP_Client.vcxproj", "{037F1452-F7A5-4F72-AA4D-AD0602E159EE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LwIP09_NETCONN_TCP_Server", "Experiment_Extension\LwIP\LwIP09_NETCONN_TCP_Server\Project\VS\LwIP09_NETCONN_TCP_Server\LwIP09_NETCONN_TCP_Server.vcxproj", "{320642E6-2181-4A2F-845B-4F11906D0E06}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LwIP10_NETCONN_WebServer", "Experiment_Extension\LwIP\LwIP10_NETCONN_WebServer\Project\VS\LwIP10_NETCONN_WebServer\LwIP10_NETCONN_WebServer.vcxproj", "{C8E9E97B-64F5-4BF4-885D-BEFA538571D1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|VisualGDB = Debug|VisualGDB
@@ -118,6 +136,42 @@ Global
 		{FC1D823C-50E0-45E1-830D-DD5D71374E26}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
 		{FC1D823C-50E0-45E1-830D-DD5D71374E26}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
 		{FC1D823C-50E0-45E1-830D-DD5D71374E26}.Release|VisualGDB.Build.0 = Release|VisualGDB
+		{10727D7D-B684-42CD-8D82-86E307CB2394}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{10727D7D-B684-42CD-8D82-86E307CB2394}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{10727D7D-B684-42CD-8D82-86E307CB2394}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{10727D7D-B684-42CD-8D82-86E307CB2394}.Release|VisualGDB.Build.0 = Release|VisualGDB
+		{8A90D23F-8B56-4E17-A371-49FB2CFFDB5A}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{8A90D23F-8B56-4E17-A371-49FB2CFFDB5A}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{8A90D23F-8B56-4E17-A371-49FB2CFFDB5A}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{8A90D23F-8B56-4E17-A371-49FB2CFFDB5A}.Release|VisualGDB.Build.0 = Release|VisualGDB
+		{DEBCC48D-04EA-40A2-8430-BFCD4B9799C5}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{DEBCC48D-04EA-40A2-8430-BFCD4B9799C5}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{DEBCC48D-04EA-40A2-8430-BFCD4B9799C5}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{DEBCC48D-04EA-40A2-8430-BFCD4B9799C5}.Release|VisualGDB.Build.0 = Release|VisualGDB
+		{4F4994A8-D8CD-41AD-B5D3-00982CFFBB16}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{4F4994A8-D8CD-41AD-B5D3-00982CFFBB16}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{4F4994A8-D8CD-41AD-B5D3-00982CFFBB16}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{4F4994A8-D8CD-41AD-B5D3-00982CFFBB16}.Release|VisualGDB.Build.0 = Release|VisualGDB
+		{5984BE73-2937-41F9-9EF8-C292D8763EB5}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{5984BE73-2937-41F9-9EF8-C292D8763EB5}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{5984BE73-2937-41F9-9EF8-C292D8763EB5}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{5984BE73-2937-41F9-9EF8-C292D8763EB5}.Release|VisualGDB.Build.0 = Release|VisualGDB
+		{BD462648-B96C-4A87-A7D5-0480021CE6E3}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{BD462648-B96C-4A87-A7D5-0480021CE6E3}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{BD462648-B96C-4A87-A7D5-0480021CE6E3}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{BD462648-B96C-4A87-A7D5-0480021CE6E3}.Release|VisualGDB.Build.0 = Release|VisualGDB
+		{037F1452-F7A5-4F72-AA4D-AD0602E159EE}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{037F1452-F7A5-4F72-AA4D-AD0602E159EE}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{037F1452-F7A5-4F72-AA4D-AD0602E159EE}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{037F1452-F7A5-4F72-AA4D-AD0602E159EE}.Release|VisualGDB.Build.0 = Release|VisualGDB
+		{320642E6-2181-4A2F-845B-4F11906D0E06}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{320642E6-2181-4A2F-845B-4F11906D0E06}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{320642E6-2181-4A2F-845B-4F11906D0E06}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{320642E6-2181-4A2F-845B-4F11906D0E06}.Release|VisualGDB.Build.0 = Release|VisualGDB
+		{C8E9E97B-64F5-4BF4-885D-BEFA538571D1}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{C8E9E97B-64F5-4BF4-885D-BEFA538571D1}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{C8E9E97B-64F5-4BF4-885D-BEFA538571D1}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{C8E9E97B-64F5-4BF4-885D-BEFA538571D1}.Release|VisualGDB.Build.0 = Release|VisualGDB
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

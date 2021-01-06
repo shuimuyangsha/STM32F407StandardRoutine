@@ -1,0 +1,397 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{9c8b0663-8969-4c2b-9db6-ed5e7b47ea93}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header files">
+      <UniqueIdentifier>{8cacf796-0fd6-4d57-ab6f-82ef71ecbf2c}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource files">
+      <UniqueIdentifier>{fdda59c2-bb86-4375-8576-7f2125d6254b}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Source files\USER">
+      <UniqueIdentifier>{64288093-dfdb-433e-bdae-057ecf464e27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\HARDWARE">
+      <UniqueIdentifier>{26fd3ba2-86e4-4bd8-9183-4d139a29cabb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\CORE">
+      <UniqueIdentifier>{dae18029-846c-4107-8557-7feb3a624071}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\FWLIB">
+      <UniqueIdentifier>{6403ec25-59d6-4530-8cea-189642da5994}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\SYSTEM">
+      <UniqueIdentifier>{2a56c183-bdcc-4a9c-8bd4-9a61d31d9934}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\USMART">
+      <UniqueIdentifier>{3fff2606-6104-43bc-8e1c-aa3f15e2c94e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\LWIP-APP">
+      <UniqueIdentifier>{383017aa-d4ad-4b36-a78f-02825fb5c0c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\LWIP-NETIF">
+      <UniqueIdentifier>{651accd5-1d50-4628-8a9c-2f7773e39201}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\LWIP-CORE">
+      <UniqueIdentifier>{3630d0f5-1691-4e35-a431-500c2d101dd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\LWIP-ARCH">
+      <UniqueIdentifier>{de4094c6-2be2-4dd2-844c-3b6ff91ff098}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\LWIP-API">
+      <UniqueIdentifier>{2ecc7ede-312c-4b89-b905-024110ccee6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\UCOSII_CORE">
+      <UniqueIdentifier>{eec200da-627d-420d-9b95-b6cf184125cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\UCOSII_PORT">
+      <UniqueIdentifier>{fd43939f-a882-47d6-ab5b-d7684bf86772}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\UCOSII_CONFIG">
+      <UniqueIdentifier>{cf9ba190-afe0-4ad1-bc4f-430c0ef1f1ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\MALLOC">
+      <UniqueIdentifier>{68c04b0c-2943-4ed1-829f-67a012bc8781}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files">
+      <UniqueIdentifier>{74c1f1cd-67ea-48ee-9574-f70d20577e77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\USER">
+      <UniqueIdentifier>{679589dd-edb5-4ee1-aa90-c51726ea1339}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\HARDWARE">
+      <UniqueIdentifier>{bc3ac4e3-4a24-4934-a68e-459b6751e4f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\CORE">
+      <UniqueIdentifier>{3cb693be-9794-48fb-a7f5-85c50c5fb6a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\FWLIB">
+      <UniqueIdentifier>{cf0f250b-5f0c-46f0-a573-9d07bde94c5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\SYSTEM">
+      <UniqueIdentifier>{3fe11f18-066e-4443-8261-14591f13cb25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\USMART">
+      <UniqueIdentifier>{a89313fa-e531-4b20-a709-f852c4948dac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\LWIP-APP">
+      <UniqueIdentifier>{e29d1dfa-999d-403a-b803-ef22c51ae23a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\LWIP-NETIF">
+      <UniqueIdentifier>{967e0173-3e85-4ad8-bd26-2da6e5ee50ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\LWIP-CORE">
+      <UniqueIdentifier>{c928c357-4c95-48c1-9a4a-8e48dfd5cc14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\LWIP-ARCH">
+      <UniqueIdentifier>{0aeb7198-8641-450f-acb5-e2bac308a2ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\LWIP-API">
+      <UniqueIdentifier>{c24edb75-7489-4193-9cca-472419699381}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\UCOSII_CORE">
+      <UniqueIdentifier>{005b52dd-8622-492c-85da-81c142110926}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\UCOSII_PORT">
+      <UniqueIdentifier>{4ffa427a-d582-42f3-91ec-07ea251236ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\UCOSII_CONFIG">
+      <UniqueIdentifier>{c980d006-56af-4241-b22b-fbf9ad9ae95a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\MALLOC">
+      <UniqueIdentifier>{925a177d-52dd-4985-b11a-b1452ee5f786}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files">
+      <UniqueIdentifier>{3acfc009-16ac-494f-a3a5-a37823a3ae50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VisualGDB settings">
+      <UniqueIdentifier>{982d4a9f-aa91-44e4-aae9-9f22f289b7f7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\USER\main.c">
+      <Filter>Source files\USER</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\USER\stm32f4xx_it.c">
+      <Filter>Source files\USER</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\USER\system_stm32f4xx.c">
+      <Filter>Source files\USER</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\HARDWARE\KEY\key.c">
+      <Filter>Source files\HARDWARE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\HARDWARE\LED\led.c">
+      <Filter>Source files\HARDWARE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\HARDWARE\TIMER\timer.c">
+      <Filter>Source files\HARDWARE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\HARDWARE\LCD\lcd.c">
+      <Filter>Source files\HARDWARE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\HARDWARE\ETHERNET\LAN8720.c">
+      <Filter>Source files\HARDWARE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\HARDWARE\SRAM\sram.c">
+      <Filter>Source files\HARDWARE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\HARDWARE\ADC\adc.c">
+      <Filter>Source files\HARDWARE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\HARDWARE\BEEP\beep.c">
+      <Filter>Source files\HARDWARE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\HARDWARE\InterTemperate\temperature.c">
+      <Filter>Source files\HARDWARE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\HARDWARE\RTC\rtc.c">
+      <Filter>Source files\HARDWARE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\CORE\startup_stm32f40_41xxx.s">
+      <Filter>Source files\CORE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\FWLIB\STM32F4xx_StdPeriph_Driver\src\misc.c">
+      <Filter>Source files\FWLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\FWLIB\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_gpio.c">
+      <Filter>Source files\FWLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\FWLIB\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_rcc.c">
+      <Filter>Source files\FWLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\FWLIB\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_syscfg.c">
+      <Filter>Source files\FWLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\FWLIB\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_tim.c">
+      <Filter>Source files\FWLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\FWLIB\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_usart.c">
+      <Filter>Source files\FWLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\FWLIB\STM32F4x7_ETH_Driver\src\stm32f4x7_eth.c">
+      <Filter>Source files\FWLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\FWLIB\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_fsmc.c">
+      <Filter>Source files\FWLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\FWLIB\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_exti.c">
+      <Filter>Source files\FWLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\FWLIB\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_pwr.c">
+      <Filter>Source files\FWLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\FWLIB\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_adc.c">
+      <Filter>Source files\FWLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\FWLIB\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_rtc.c">
+      <Filter>Source files\FWLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SYSTEM\delay\delay.c">
+      <Filter>Source files\SYSTEM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SYSTEM\sys\sys.c">
+      <Filter>Source files\SYSTEM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SYSTEM\usart\usart.c">
+      <Filter>Source files\SYSTEM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\USMART\usmart.c">
+      <Filter>Source files\USMART</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\USMART\usmart_config.c">
+      <Filter>Source files\USMART</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\USMART\usmart_str.c">
+      <Filter>Source files\USMART</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\LWIP\lwip_app\lwip_comm\lwip_comm.c">
+      <Filter>Source files\LWIP-APP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\LWIP\lwip_app\web_server_demo\fs.c">
+      <Filter>Source files\LWIP-APP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\LWIP\lwip_app\web_server_demo\httpd.c">
+      <Filter>Source files\LWIP-APP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\LWIP\lwip_app\web_server_demo\httpd_cgi_ssi.c">
+      <Filter>Source files\LWIP-APP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\LWIP\lwip-1.4.1\src\netif\etharp.c">
+      <Filter>Source files\LWIP-NETIF</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\LWIP\lwip-1.4.1\src\netif\ethernetif.c">
+      <Filter>Source files\LWIP-NETIF</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\LWIP\lwip-1.4.1\src\core\ipv4\autoip.c">
+      <Filter>Source files\LWIP-CORE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\LWIP\lwip-1.4.1\src\core\ipv4\icmp.c">
+      <Filter>Source files\LWIP-CORE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\LWIP\lwip-1.4.1\src\core\ipv4\igmp.c">
+      <Filter>Source files\LWIP-CORE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\LWIP\lwip-1.4.1\src\core\ipv4\inet.c">
+      <Filter>Source files\LWIP-CORE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\LWIP\lwip-1.4.1\src\core\ipv4\inet_chksum.c">
+      <Filter>Source files\LWIP-CORE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\LWIP\lwip-1.4.1\src\core\ipv4\ip.c">
+      <Filter>Source files\LWIP-CORE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\LWIP\lwip-1.4.1\src\core\ipv4\ip_addr.c">
+      <Filter>Source files\LWIP-CORE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\LWIP\lwip-1.4.1\src\core\ipv4\ip_frag.c">
+      <Filter>Source files\LWIP-CORE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\LWIP\lwip-1.4.1\src\core\def.c">
+      <Filter>Source files\LWIP-CORE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\LWIP\lwip-1.4.1\src\core\dhcp.c">
+      <Filter>Source files\LWIP-CORE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\LWIP\lwip-1.4.1\src\core\dns.c">
+      <Filter>Source files\LWIP-CORE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\LWIP\lwip-1.4.1\src\core\init.c">
+      <Filter>Source files\LWIP-CORE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\LWIP\lwip-1.4.1\src\core\memp.c">
+      <Filter>Source files\LWIP-CORE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\LWIP\lwip-1.4.1\src\core\netif.c">
+      <Filter>Source files\LWIP-CORE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\LWIP\lwip-1.4.1\src\core\pbuf.c">
+      <Filter>Source files\LWIP-CORE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\LWIP\lwip-1.4.1\src\core\raw.c">
+      <Filter>Source files\LWIP-CORE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\LWIP\lwip-1.4.1\src\core\stats.c">
+      <Filter>Source files\LWIP-CORE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\LWIP\lwip-1.4.1\src\core\tcp.c">
+      <Filter>Source files\LWIP-CORE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\LWIP\lwip-1.4.1\src\core\tcp_in.c">
+      <Filter>Source files\LWIP-CORE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\LWIP\lwip-1.4.1\src\core\tcp_out.c">
+      <Filter>Source files\LWIP-CORE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\LWIP\lwip-1.4.1\src\core\timers.c">
+      <Filter>Source files\LWIP-CORE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\LWIP\lwip-1.4.1\src\core\udp.c">
+      <Filter>Source files\LWIP-CORE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\LWIP\lwip-1.4.1\src\core\mem.c">
+      <Filter>Source files\LWIP-CORE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\LWIP\arch\sys_arch.c">
+      <Filter>Source files\LWIP-ARCH</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\LWIP\lwip-1.4.1\src\api\api_lib.c">
+      <Filter>Source files\LWIP-API</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\LWIP\lwip-1.4.1\src\api\api_msg.c">
+      <Filter>Source files\LWIP-API</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\LWIP\lwip-1.4.1\src\api\err.c">
+      <Filter>Source files\LWIP-API</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\LWIP\lwip-1.4.1\src\api\netbuf.c">
+      <Filter>Source files\LWIP-API</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\LWIP\lwip-1.4.1\src\api\netdb.c">
+      <Filter>Source files\LWIP-API</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\LWIP\lwip-1.4.1\src\api\netifapi.c">
+      <Filter>Source files\LWIP-API</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\LWIP\lwip-1.4.1\src\api\sockets.c">
+      <Filter>Source files\LWIP-API</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\LWIP\lwip-1.4.1\src\api\tcpip.c">
+      <Filter>Source files\LWIP-API</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UCOSII\CORE\os_core.c">
+      <Filter>Source files\UCOSII_CORE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UCOSII\CORE\os_flag.c">
+      <Filter>Source files\UCOSII_CORE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UCOSII\CORE\os_mbox.c">
+      <Filter>Source files\UCOSII_CORE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UCOSII\CORE\os_mem.c">
+      <Filter>Source files\UCOSII_CORE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UCOSII\CORE\os_mutex.c">
+      <Filter>Source files\UCOSII_CORE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UCOSII\CORE\os_q.c">
+      <Filter>Source files\UCOSII_CORE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UCOSII\CORE\os_sem.c">
+      <Filter>Source files\UCOSII_CORE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UCOSII\CORE\os_task.c">
+      <Filter>Source files\UCOSII_CORE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UCOSII\CORE\os_time.c">
+      <Filter>Source files\UCOSII_CORE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UCOSII\CORE\os_tmr.c">
+      <Filter>Source files\UCOSII_CORE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\UCOSII\PORT\os_cpu_c.c">
+      <Filter>Source files\UCOSII_PORT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MALLOC\malloc.c">
+      <Filter>Source files\MALLOC</Filter>
+    </ClCompile>
+    <None Include="mcu.props">
+      <Filter>Source files\Device-specific files</Filter>
+    </None>
+    <ClInclude Include="..\..\..\CORE\core_cm4.h">
+      <Filter>Header files\CORE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\CORE\core_cm4_simd.h">
+      <Filter>Header files\CORE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\UCOSII\PORT\os_cpu.h">
+      <Filter>Header files\UCOSII_PORT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\UCOSII\CONFIG\includes.h">
+      <Filter>Header files\UCOSII_CONFIG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\UCOSII\CONFIG\os_cfg.h">
+      <Filter>Header files\UCOSII_CONFIG</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <None Include="LwIP10_NETCONN_WebServer-Debug.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="LwIP10_NETCONN_WebServer-Release.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="MCU.xml">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <ClCompile Include="..\..\..\UCOSII\PORT\os_cpu_a.s">
+      <Filter>Source files\UCOSII_PORT</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
