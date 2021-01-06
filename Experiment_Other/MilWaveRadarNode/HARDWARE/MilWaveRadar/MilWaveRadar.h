@@ -3,7 +3,7 @@
 
 #include "sys.h"
 
-#define  TOTAL_POINT 20
+#define  TOTAL_POINT 200
 
 typedef struct radar_object_struct {
 	u16	rIdx;
