@@ -44,22 +44,22 @@ int main(void)
   	while(1) 
 	{		
 		t++;
-//		if((t%10)==0)	//每100ms更新一次显示数据
-//		{
-//;
-//			RTC_GetTime(RTC_Format_BIN,&RTC_TimeStruct);
-//			
-//			sprintf((char*)tbuf,"Time:%02d:%02d:%02d",RTC_TimeStruct.RTC_Hours,RTC_TimeStruct.RTC_Minutes,RTC_TimeStruct.RTC_Seconds); 
-//			LCD_ShowString(30,140,210,16,16,tbuf);	
-//			
-//			RTC_GetDate(RTC_Format_BIN, &RTC_DateStruct);
-//			
-//			sprintf((char*)tbuf,"Date:20%02d-%02d-%02d",RTC_DateStruct.RTC_Year,RTC_DateStruct.RTC_Month,RTC_DateStruct.RTC_Date); 
-//			LCD_ShowString(30,160,210,16,16,tbuf);	
-//			sprintf((char*)tbuf,"Week:%d",RTC_DateStruct.RTC_WeekDay); 
-//			LCD_ShowString(30,180,210,16,16,tbuf);
-//		} 
-//		if((t%20)==0)LED0=!LED0;	//每200ms,翻转一次LED0 
+		if((t%10)==0)	//每100ms更新一次显示数据
+		{
+			;
+			RTC_GetTime(RTC_Format_BIN,&RTC_TimeStruct);
+			
+			sprintf((char*)tbuf,"Time:%02d:%02d:%02d",RTC_TimeStruct.RTC_Hours,RTC_TimeStruct.RTC_Minutes,RTC_TimeStruct.RTC_Seconds); 
+			LCD_ShowString(30,140,210,16,16,tbuf);	
+			
+			RTC_GetDate(RTC_Format_BIN, &RTC_DateStruct);
+			
+			sprintf((char*)tbuf,"Date:20%02d-%02d-%02d",RTC_DateStruct.RTC_Year,RTC_DateStruct.RTC_Month,RTC_DateStruct.RTC_Date); 
+			LCD_ShowString(30,160,210,16,16,tbuf);	
+			sprintf((char*)tbuf,"Week:%d",RTC_DateStruct.RTC_WeekDay); 
+			LCD_ShowString(30,180,210,16,16,tbuf);
+		} 
+		if((t%20)==0)LED0=!LED0;	//每200ms,翻转一次LED0 
 		if((t%20)==0)LED1=!LED1;	//每200ms,翻转一次LED0
 		printf("这是FLASH里面的程序，已完成更新！\r\n");
 		delay_ms(50);
