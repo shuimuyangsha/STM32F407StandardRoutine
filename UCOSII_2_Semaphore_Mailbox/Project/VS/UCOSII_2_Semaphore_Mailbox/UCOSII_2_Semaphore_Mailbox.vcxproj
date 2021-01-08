@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|VisualGDB">
+      <Configuration>Debug</Configuration>
+      <Platform>VisualGDB</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|VisualGDB">
+      <Configuration>Release</Configuration>
+      <Platform>VisualGDB</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{76E7D6F3-D9C7-4F81-B7F6-F76E972E2BD8}</ProjectGuid>
+    <BSP_ID>KEIL:Keil/STM32F4xx_DFP</BSP_ID>
+    <BSP_VERSION>2.6.0</BSP_VERSION>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <MCUPropertyListFile>$(ProjectDir)mcu.props</MCUPropertyListFile>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <MCUPropertyListFile>$(ProjectDir)mcu.props</MCUPropertyListFile>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <GNUConfigurationType>Debug</GNUConfigurationType>
+    <ToolchainID>com.sysprogs.toolchains.nongnu.armcc</ToolchainID>
+    <ToolchainVersion>5.x//r1</ToolchainVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <ToolchainID>com.sysprogs.toolchains.nongnu.armcc</ToolchainID>
+    <ToolchainVersion>5.x//r1</ToolchainVersion>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\CORE;..\..\..\SYSTEM\delay;..\..\..\SYSTEM\sys;..\..\..\SYSTEM\usart;..\..\..\USER;..\..\..\HARDWARE\LED;..\..\..\HARDWARE\LCD;..\..\..\HARDWARE\KEY;..\..\..\HARDWARE\IIC;..\..\..\HARDWARE\24CXX;..\..\..\FWLIB\inc;..\..\..\HARDWARE\TOUCH;..\..\..\HARDWARE\BEEP;..\..\..\UCOSII\CONFIG;..\..\..\UCOSII\CORE;..\..\..\UCOSII\PORT;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>STM32F40_41xxx;USE_STDPERIPH_DRIVER;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions />
+      <CLanguageStandard />
+      <CPPLanguageStandard />
+    </ClCompile>
+    <Link>
+      <AdditionalLinkerInputs>%(Link.AdditionalLinkerInputs)</AdditionalLinkerInputs>
+      <AdditionalOptions />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\CORE;..\..\..\SYSTEM\delay;..\..\..\SYSTEM\sys;..\..\..\SYSTEM\usart;..\..\..\USER;..\..\..\HARDWARE\LED;..\..\..\HARDWARE\LCD;..\..\..\HARDWARE\KEY;..\..\..\HARDWARE\IIC;..\..\..\HARDWARE\24CXX;..\..\..\FWLIB\inc;..\..\..\HARDWARE\TOUCH;..\..\..\HARDWARE\BEEP;..\..\..\UCOSII\CONFIG;..\..\..\UCOSII\CORE;..\..\..\UCOSII\PORT;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>STM32F40_41xxx;USE_STDPERIPH_DRIVER;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions />
+      <CLanguageStandard />
+      <CPPLanguageStandard />
+    </ClCompile>
+    <Link>
+      <AdditionalLinkerInputs>%(Link.AdditionalLinkerInputs)</AdditionalLinkerInputs>
+      <AdditionalOptions />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\USER\main.c" />
+    <ClCompile Include="..\..\..\USER\stm32f4xx_it.c" />
+    <ClCompile Include="..\..\..\USER\system_stm32f4xx.c" />
+    <ClCompile Include="..\..\..\HARDWARE\LED\led.c" />
+    <ClCompile Include="..\..\..\HARDWARE\LCD\lcd.c" />
+    <ClCompile Include="..\..\..\HARDWARE\KEY\key.c" />
+    <ClCompile Include="..\..\..\HARDWARE\BEEP\beep.c" />
+    <ClCompile Include="..\..\..\HARDWARE\IIC\myiic.c" />
+    <ClCompile Include="..\..\..\HARDWARE\24CXX\24cxx.c" />
+    <ClCompile Include="..\..\..\HARDWARE\TOUCH\ctiic.c" />
+    <ClCompile Include="..\..\..\HARDWARE\TOUCH\gt9147.c" />
+    <ClCompile Include="..\..\..\HARDWARE\TOUCH\ott2001a.c" />
+    <ClCompile Include="..\..\..\HARDWARE\TOUCH\ft5206.c" />
+    <ClCompile Include="..\..\..\HARDWARE\TOUCH\touch.c" />
+    <ClCompile Include="..\..\..\SYSTEM\delay\delay.c" />
+    <ClCompile Include="..\..\..\SYSTEM\sys\sys.c" />
+    <ClCompile Include="..\..\..\SYSTEM\usart\usart.c" />
+    <ClCompile Include="..\..\..\CORE\startup_stm32f40_41xxx.s" />
+    <ClCompile Include="..\..\..\FWLIB\src\misc.c" />
+    <ClCompile Include="..\..\..\FWLIB\src\stm32f4xx_gpio.c" />
+    <ClCompile Include="..\..\..\FWLIB\src\stm32f4xx_fsmc.c" />
+    <ClCompile Include="..\..\..\FWLIB\src\stm32f4xx_rcc.c" />
+    <ClCompile Include="..\..\..\FWLIB\src\stm32f4xx_syscfg.c" />
+    <ClCompile Include="..\..\..\FWLIB\src\stm32f4xx_usart.c" />
+    <ClCompile Include="..\..\..\UCOSII\CORE\os_core.c" />
+    <ClCompile Include="..\..\..\UCOSII\CORE\os_flag.c" />
+    <ClCompile Include="..\..\..\UCOSII\CORE\os_mbox.c" />
+    <ClCompile Include="..\..\..\UCOSII\CORE\os_mem.c" />
+    <ClCompile Include="..\..\..\UCOSII\CORE\os_mutex.c" />
+    <ClCompile Include="..\..\..\UCOSII\CORE\os_q.c" />
+    <ClCompile Include="..\..\..\UCOSII\CORE\os_sem.c" />
+    <ClCompile Include="..\..\..\UCOSII\CORE\os_task.c" />
+    <ClCompile Include="..\..\..\UCOSII\CORE\os_time.c" />
+    <ClCompile Include="..\..\..\UCOSII\CORE\os_tmr.c" />
+    <ClCompile Include="..\..\..\UCOSII\PORT\os_cpu_a.s" />
+    <ClCompile Include="..\..\..\UCOSII\PORT\os_cpu_c.c" />
+    <None Include="mcu.props" />
+    <ClInclude Include="..\..\..\UCOSII\PORT\os_cpu.h" />
+    <ClInclude Include="..\..\..\UCOSII\CONFIG\includes.h" />
+    <ClInclude Include="..\..\..\UCOSII\CONFIG\os_cfg.h" />
+    <None Include="..\..\..\readme.txt" />
+    <ClInclude Include="$(BSP_ROOT)\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h" />
+    <None Include="UCOSII_2_Semaphore_Mailbox-Debug.vgdbsettings" />
+    <None Include="UCOSII_2_Semaphore_Mailbox-Release.vgdbsettings" />
+    <None Include="MCU.xml" />
+  </ItemGroup>
+</Project>

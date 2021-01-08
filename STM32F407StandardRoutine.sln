@@ -63,6 +63,12 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LwIP09_NETCONN_TCP_Server",
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LwIP10_NETCONN_WebServer", "Experiment_Extension\LwIP\LwIP10_NETCONN_WebServer\Project\VS\LwIP10_NETCONN_WebServer\LwIP10_NETCONN_WebServer.vcxproj", "{C8E9E97B-64F5-4BF4-885D-BEFA538571D1}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UCOSII_1_1_TaskScheduling", "UCOSII_1_1_TaskScheduling\Project\VS\UCOSII_1_1_TaskScheduling\UCOSII_1_1_TaskScheduling.vcxproj", "{CEAD47A1-8D80-4C86-82B6-009CC0CF3DB5}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UCOSII_2_Semaphore_Mailbox", "UCOSII_2_Semaphore_Mailbox\Project\VS\UCOSII_2_Semaphore_Mailbox\UCOSII_2_Semaphore_Mailbox.vcxproj", "{76E7D6F3-D9C7-4F81-B7F6-F76E972E2BD8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Experiment_50_Serial_IAP", "Experiment_50_Serial_IAP\Project\VS\Experiment_50_Serial_IAP\Experiment_50_Serial_IAP.vcxproj", "{20CC2337-4C2D-4BD7-85B5-9BBEBDF4DA7E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|VisualGDB = Debug|VisualGDB
@@ -173,6 +179,18 @@ Global
 		{C8E9E97B-64F5-4BF4-885D-BEFA538571D1}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
 		{C8E9E97B-64F5-4BF4-885D-BEFA538571D1}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
 		{C8E9E97B-64F5-4BF4-885D-BEFA538571D1}.Release|VisualGDB.Build.0 = Release|VisualGDB
+		{CEAD47A1-8D80-4C86-82B6-009CC0CF3DB5}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{CEAD47A1-8D80-4C86-82B6-009CC0CF3DB5}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{CEAD47A1-8D80-4C86-82B6-009CC0CF3DB5}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{CEAD47A1-8D80-4C86-82B6-009CC0CF3DB5}.Release|VisualGDB.Build.0 = Release|VisualGDB
+		{76E7D6F3-D9C7-4F81-B7F6-F76E972E2BD8}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{76E7D6F3-D9C7-4F81-B7F6-F76E972E2BD8}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{76E7D6F3-D9C7-4F81-B7F6-F76E972E2BD8}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{76E7D6F3-D9C7-4F81-B7F6-F76E972E2BD8}.Release|VisualGDB.Build.0 = Release|VisualGDB
+		{20CC2337-4C2D-4BD7-85B5-9BBEBDF4DA7E}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{20CC2337-4C2D-4BD7-85B5-9BBEBDF4DA7E}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{20CC2337-4C2D-4BD7-85B5-9BBEBDF4DA7E}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{20CC2337-4C2D-4BD7-85B5-9BBEBDF4DA7E}.Release|VisualGDB.Build.0 = Release|VisualGDB
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

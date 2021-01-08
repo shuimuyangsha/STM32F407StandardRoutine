@@ -30,14 +30,14 @@ int main(void)
  	LCD_Init();					//LCD初始化  
  	KEY_Init();					//按键初始化 
  	POINT_COLOR=RED;//设置字体为红色 
-//	LCD_ShowString(30,50,200,16,16,"Explorer STM32F4");	
-//	LCD_ShowString(30,70,200,16,16,"IAP TEST");	
-//	LCD_ShowString(30,90,200,16,16,"ATOM@ALIENTEK");
-//	LCD_ShowString(30,110,200,16,16,"2014/7/21");  
-//	LCD_ShowString(30,130,200,16,16,"KEY_UP:Copy APP2FLASH");
-//	LCD_ShowString(30,150,200,16,16,"KEY1:Erase SRAM APP");
-//	LCD_ShowString(30,170,200,16,16,"KEY0:Run SRAM APP");
-//	LCD_ShowString(30,190,200,16,16,"KEY2:Run FLASH APP");
+	LCD_ShowString(30,50,200,16,16,"Explorer STM32F4");	
+	LCD_ShowString(30,70,200,16,16,"IAP TEST");	
+	LCD_ShowString(30,90,200,16,16,"ATOM@ALIENTEK");
+	LCD_ShowString(30,110,200,16,16,"2014/7/21");  
+	LCD_ShowString(30,130,200,16,16,"KEY_UP:Copy APP2FLASH");
+	LCD_ShowString(30,150,200,16,16,"KEY1:Erase SRAM APP");
+	LCD_ShowString(30,170,200,16,16,"KEY0:Run SRAM APP");
+	LCD_ShowString(30,190,200,16,16,"KEY2:Run FLASH APP");
 	POINT_COLOR=BLUE;
 	//显示提示信息
 	POINT_COLOR=BLUE;//设置字体为蓝色	  
