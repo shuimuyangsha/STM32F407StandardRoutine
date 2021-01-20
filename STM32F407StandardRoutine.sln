@@ -69,6 +69,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UCOSII_2_Semaphore_Mailbox"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Experiment_50_Serial_IAP", "Experiment_50_Serial_IAP\Project\VS\Experiment_50_Serial_IAP\Experiment_50_Serial_IAP.vcxproj", "{20CC2337-4C2D-4BD7-85B5-9BBEBDF4DA7E}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Experiment_05_ExternalInterrupt", "Experiment_05_ExternalInterrupt\Project\VS\Experiment_05_ExternalInterrupt\Experiment_05_ExternalInterrupt.vcxproj", "{711EF540-4487-4F65-9F1E-0D4AD0AE6500}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|VisualGDB = Debug|VisualGDB
@@ -191,6 +193,10 @@ Global
 		{20CC2337-4C2D-4BD7-85B5-9BBEBDF4DA7E}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
 		{20CC2337-4C2D-4BD7-85B5-9BBEBDF4DA7E}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
 		{20CC2337-4C2D-4BD7-85B5-9BBEBDF4DA7E}.Release|VisualGDB.Build.0 = Release|VisualGDB
+		{711EF540-4487-4F65-9F1E-0D4AD0AE6500}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{711EF540-4487-4F65-9F1E-0D4AD0AE6500}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{711EF540-4487-4F65-9F1E-0D4AD0AE6500}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{711EF540-4487-4F65-9F1E-0D4AD0AE6500}.Release|VisualGDB.Build.0 = Release|VisualGDB
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
