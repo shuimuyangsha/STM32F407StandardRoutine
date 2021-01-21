@@ -71,6 +71,18 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Experiment_50_Serial_IAP", 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Experiment_05_ExternalInterrupt", "Experiment_05_ExternalInterrupt\Project\VS\Experiment_05_ExternalInterrupt\Experiment_05_ExternalInterrupt.vcxproj", "{711EF540-4487-4F65-9F1E-0D4AD0AE6500}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Experiment_06_IndependentWatchdog", "Experiment_06_IndependentWatchdog\Project\VS\Experiment_06_IndependentWatchdog\Experiment_06_IndependentWatchdog.vcxproj", "{85A654FF-36A9-4C6F-874B-432F83D0BD2C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Experiment_07_WindowDog", "Experiment_07_WindowDog\Project\VS\Experiment_07_WindowDog\Experiment_07_WindowDog.vcxproj", "{245D750A-807F-42C6-B8C7-4BB7ECF1DFC2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Experiment_09_PWMOutput", "Experiment_09_PWMOutput\Project\VS\Experiment_09_PWMOutput\Experiment_09_PWMOutput.vcxproj", "{85DA2856-E7F6-4679-8026-D56E97FF063B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Experiment_10_InputCapture", "Experiment_10_InputCapture\Project\VS\Experiment_10_InputCapture\Experiment_10_InputCapture.vcxproj", "{03EABC9B-068F-4E01-8083-A364FCA16024}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Experiment_11_TouchKey", "Experiment_11_TouchKey\Project\VS\Experiment_11_TouchKey\Experiment_11_TouchKey.vcxproj", "{B2B5597E-6A56-4AA1-A845-0DA254ACB3C8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Experiment_13_TFTLCDDisplay", "Experiment_13_TFTLCDDisplay\Project\VS\Experiment_13_TFTLCDDisplay\Experiment_13_TFTLCDDisplay.vcxproj", "{C6C1F24A-C216-423D-8901-4FB09FD5B835}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|VisualGDB = Debug|VisualGDB
@@ -197,6 +209,30 @@ Global
 		{711EF540-4487-4F65-9F1E-0D4AD0AE6500}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
 		{711EF540-4487-4F65-9F1E-0D4AD0AE6500}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
 		{711EF540-4487-4F65-9F1E-0D4AD0AE6500}.Release|VisualGDB.Build.0 = Release|VisualGDB
+		{85A654FF-36A9-4C6F-874B-432F83D0BD2C}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{85A654FF-36A9-4C6F-874B-432F83D0BD2C}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{85A654FF-36A9-4C6F-874B-432F83D0BD2C}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{85A654FF-36A9-4C6F-874B-432F83D0BD2C}.Release|VisualGDB.Build.0 = Release|VisualGDB
+		{245D750A-807F-42C6-B8C7-4BB7ECF1DFC2}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{245D750A-807F-42C6-B8C7-4BB7ECF1DFC2}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{245D750A-807F-42C6-B8C7-4BB7ECF1DFC2}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{245D750A-807F-42C6-B8C7-4BB7ECF1DFC2}.Release|VisualGDB.Build.0 = Release|VisualGDB
+		{85DA2856-E7F6-4679-8026-D56E97FF063B}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{85DA2856-E7F6-4679-8026-D56E97FF063B}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{85DA2856-E7F6-4679-8026-D56E97FF063B}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{85DA2856-E7F6-4679-8026-D56E97FF063B}.Release|VisualGDB.Build.0 = Release|VisualGDB
+		{03EABC9B-068F-4E01-8083-A364FCA16024}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{03EABC9B-068F-4E01-8083-A364FCA16024}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{03EABC9B-068F-4E01-8083-A364FCA16024}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{03EABC9B-068F-4E01-8083-A364FCA16024}.Release|VisualGDB.Build.0 = Release|VisualGDB
+		{B2B5597E-6A56-4AA1-A845-0DA254ACB3C8}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{B2B5597E-6A56-4AA1-A845-0DA254ACB3C8}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{B2B5597E-6A56-4AA1-A845-0DA254ACB3C8}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{B2B5597E-6A56-4AA1-A845-0DA254ACB3C8}.Release|VisualGDB.Build.0 = Release|VisualGDB
+		{C6C1F24A-C216-423D-8901-4FB09FD5B835}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{C6C1F24A-C216-423D-8901-4FB09FD5B835}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{C6C1F24A-C216-423D-8901-4FB09FD5B835}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{C6C1F24A-C216-423D-8901-4FB09FD5B835}.Release|VisualGDB.Build.0 = Release|VisualGDB
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

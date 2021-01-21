@@ -108,6 +108,7 @@ u16 TPAD_Get_MaxVal(u8 n)
 //mode:0,不支持连续触发(按下一次必须松开才能按下一次);1,支持连续触发(可以一直按下)
 //返回值:0,没有按下;1,有按下;										  
 #define TPAD_GATE_VAL 	100	//触摸的门限值,也就是必须大于tpad_default_val+TPAD_GATE_VAL,才认为是有效触摸.
+u16 Debug_rval;
 u8 TPAD_Scan(u8 mode)
 {
 	static u8 keyen=0;	//0,可以开始检测;>0,还不能开始检测	 
@@ -120,6 +121,7 @@ u8 TPAD_Scan(u8 mode)
 		keyen=0;	//支持连按	  
 	}
 	rval=TPAD_Get_MaxVal(sample); 
+	Debug_rval = rval;
 	if(rval>(tpad_default_val+TPAD_GATE_VAL)&&rval<(10*tpad_default_val))//大于tpad_default_val+TPAD_GATE_VAL,且小于10倍tpad_default_val,则有效
 	{							 
 		if((keyen==0)&&(rval>(tpad_default_val+TPAD_GATE_VAL)))	//大于tpad_default_val+TPAD_GATE_VAL,有效
