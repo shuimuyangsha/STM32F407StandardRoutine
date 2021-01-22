@@ -14,7 +14,7 @@
 //广州市星翼电子科技有限公司  
 //作者：正点原子 @ALIENTEK
 
-
+u8 Debug_adcx;
 int main(void)
 { 
  	u8 adcx;
@@ -34,6 +34,7 @@ int main(void)
 	while(1)
 	{
 		adcx=Lsens_Get_Val();
+		Debug_adcx = adcx;
 		LCD_ShowxNum(30+10*8,130,adcx,3,16,0);//显示ADC的值 
 		LED0=!LED0;
 		delay_ms(250);	

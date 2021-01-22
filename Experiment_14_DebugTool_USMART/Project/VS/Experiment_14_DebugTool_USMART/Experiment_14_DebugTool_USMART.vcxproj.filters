@@ -142,4 +142,102 @@
       <Filter>VisualGDB settings</Filter>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Program Files (x86)\Sysprogs\VisualGDB\builtins_ia32.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SYSTEM\delay\delay.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\HARDWARE\LCD\FONT.H">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Program Files (x86)\Sysprogs\VisualGDB\gcc_compat.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\HARDWARE\LCD\lcd.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\HARDWARE\LED\led.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\ForEden\KEIL\ARM\ARMCC\include\stdlib.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\USER\stm32f4xx.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\USER\stm32f4xx_conf.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\USER\stm32f4xx_it.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\ForEden\KEIL\ARM\PACK\Keil\STM32F4xx_DFP\2.6.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f401xc.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\ForEden\KEIL\ARM\PACK\Keil\STM32F4xx_DFP\2.6.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f401xe.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\ForEden\KEIL\ARM\PACK\Keil\STM32F4xx_DFP\2.6.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f405xx.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\ForEden\KEIL\ARM\PACK\Keil\STM32F4xx_DFP\2.6.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\ForEden\KEIL\ARM\PACK\Keil\STM32F4xx_DFP\2.6.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f410cx.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\ForEden\KEIL\ARM\PACK\Keil\STM32F4xx_DFP\2.6.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f410rx.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\ForEden\KEIL\ARM\PACK\Keil\STM32F4xx_DFP\2.6.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f410tx.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\ForEden\KEIL\ARM\PACK\Keil\STM32F4xx_DFP\2.6.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f411xe.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\ForEden\KEIL\ARM\PACK\Keil\STM32F4xx_DFP\2.6.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f415xx.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\ForEden\KEIL\ARM\PACK\Keil\STM32F4xx_DFP\2.6.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f417xx.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\ForEden\KEIL\ARM\PACK\Keil\STM32F4xx_DFP\2.6.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f427xx.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\ForEden\KEIL\ARM\PACK\Keil\STM32F4xx_DFP\2.6.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f429xx.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\ForEden\KEIL\ARM\PACK\Keil\STM32F4xx_DFP\2.6.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f437xx.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\ForEden\KEIL\ARM\PACK\Keil\STM32F4xx_DFP\2.6.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f439xx.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\ForEden\KEIL\ARM\PACK\Keil\STM32F4xx_DFP\2.6.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f446xx.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\ForEden\KEIL\ARM\PACK\Keil\STM32F4xx_DFP\2.6.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f469xx.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\ForEden\KEIL\ARM\PACK\Keil\STM32F4xx_DFP\2.6.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f479xx.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SYSTEM\sys\sys.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\USER\system_stm32f4xx.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SYSTEM\usart\usart.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\USMART\usmart.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\USMART\usmart_str.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+  </ItemGroup>
 </Project>

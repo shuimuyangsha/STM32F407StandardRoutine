@@ -12,7 +12,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
-    <ProjectGuid>{FCAF08D9-A9ED-4D48-B6FC-34942497991F}</ProjectGuid>
+    <ProjectGuid>{8BC8C2FE-D05B-4145-ADB8-20DAC93E0FAE}</ProjectGuid>
     <BSP_ID>KEIL:Keil/STM32F4xx_DFP</BSP_ID>
     <BSP_VERSION>2.6.0</BSP_VERSION>
   </PropertyGroup>
@@ -40,7 +40,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..\..\..\CORE;..\..\..\SYSTEM\delay;..\..\..\SYSTEM\sys;..\..\..\SYSTEM\usart;..\..\..\USER;..\..\..\HARDWARE\LED;..\..\..\HARDWARE\LCD;..\..\..\USMART;..\..\..\FWLIB\inc;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\CORE;..\..\..\SYSTEM\delay;..\..\..\SYSTEM\sys;..\..\..\SYSTEM\usart;..\..\..\USER;..\..\..\HARDWARE\LED;..\..\..\HARDWARE\LCD;..\..\..\FWLIB\inc;..\..\..\HARDWARE\RTC;..\..\..\USMART;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>STM32F40_41xxx;USE_STDPERIPH_DRIVER;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalOptions />
       <CLanguageStandard />
@@ -53,7 +53,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..\..\..\CORE;..\..\..\SYSTEM\delay;..\..\..\SYSTEM\sys;..\..\..\SYSTEM\usart;..\..\..\USER;..\..\..\HARDWARE\LED;..\..\..\HARDWARE\LCD;..\..\..\USMART;..\..\..\FWLIB\inc;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\CORE;..\..\..\SYSTEM\delay;..\..\..\SYSTEM\sys;..\..\..\SYSTEM\usart;..\..\..\USER;..\..\..\HARDWARE\LED;..\..\..\HARDWARE\LCD;..\..\..\FWLIB\inc;..\..\..\HARDWARE\RTC;..\..\..\USMART;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>STM32F40_41xxx;USE_STDPERIPH_DRIVER;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalOptions />
       <CLanguageStandard />
@@ -75,6 +75,7 @@
     <ClCompile Include="..\..\..\USER\system_stm32f4xx.c" />
     <ClCompile Include="..\..\..\HARDWARE\LED\led.c" />
     <ClCompile Include="..\..\..\HARDWARE\LCD\lcd.c" />
+    <ClCompile Include="..\..\..\HARDWARE\RTC\rtc.c" />
     <ClCompile Include="..\..\..\SYSTEM\delay\delay.c" />
     <ClCompile Include="..\..\..\SYSTEM\sys\sys.c" />
     <ClCompile Include="..\..\..\SYSTEM\usart\usart.c" />
@@ -83,49 +84,20 @@
     <ClCompile Include="..\..\..\FWLIB\src\stm32f4xx_gpio.c" />
     <ClCompile Include="..\..\..\FWLIB\src\stm32f4xx_fsmc.c" />
     <ClCompile Include="..\..\..\FWLIB\src\stm32f4xx_rcc.c" />
-    <ClCompile Include="..\..\..\FWLIB\src\stm32f4xx_usart.c" />
-    <ClCompile Include="..\..\..\FWLIB\src\stm32f4xx_tim.c" />
     <ClCompile Include="..\..\..\FWLIB\src\stm32f4xx_syscfg.c" />
+    <ClCompile Include="..\..\..\FWLIB\src\stm32f4xx_usart.c" />
+    <ClCompile Include="..\..\..\FWLIB\src\stm32f4xx_rtc.c" />
+    <ClCompile Include="..\..\..\FWLIB\src\stm32f4xx_tim.c" />
+    <ClCompile Include="..\..\..\FWLIB\src\stm32f4xx_exti.c" />
+    <ClCompile Include="..\..\..\FWLIB\src\stm32f4xx_pwr.c" />
     <ClCompile Include="..\..\..\USMART\usmart.c" />
     <ClCompile Include="..\..\..\USMART\usmart_config.c" />
     <ClCompile Include="..\..\..\USMART\usmart_str.c" />
-    <ClInclude Include="..\..\..\HARDWARE\LCD\FONT.H" />
-    <ClInclude Include="..\..\..\HARDWARE\LCD\lcd.h" />
-    <ClInclude Include="..\..\..\HARDWARE\LED\led.h" />
-    <ClInclude Include="..\..\..\SYSTEM\delay\delay.h" />
-    <ClInclude Include="..\..\..\SYSTEM\sys\sys.h" />
-    <ClInclude Include="..\..\..\SYSTEM\usart\usart.h" />
-    <ClInclude Include="..\..\..\USER\stm32f4xx.h" />
-    <ClInclude Include="..\..\..\USER\stm32f4xx_conf.h" />
-    <ClInclude Include="..\..\..\USER\stm32f4xx_it.h" />
-    <ClInclude Include="..\..\..\USER\system_stm32f4xx.h" />
-    <ClInclude Include="..\..\..\USMART\usmart.h" />
-    <ClInclude Include="..\..\..\USMART\usmart_str.h" />
-    <ClInclude Include="C:\ForEden\KEIL\ARM\ARMCC\include\stdlib.h" />
-    <ClInclude Include="C:\ForEden\KEIL\ARM\PACK\Keil\STM32F4xx_DFP\2.6.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f401xc.h" />
-    <ClInclude Include="C:\ForEden\KEIL\ARM\PACK\Keil\STM32F4xx_DFP\2.6.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f401xe.h" />
-    <ClInclude Include="C:\ForEden\KEIL\ARM\PACK\Keil\STM32F4xx_DFP\2.6.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f405xx.h" />
-    <ClInclude Include="C:\ForEden\KEIL\ARM\PACK\Keil\STM32F4xx_DFP\2.6.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h" />
-    <ClInclude Include="C:\ForEden\KEIL\ARM\PACK\Keil\STM32F4xx_DFP\2.6.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f410cx.h" />
-    <ClInclude Include="C:\ForEden\KEIL\ARM\PACK\Keil\STM32F4xx_DFP\2.6.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f410rx.h" />
-    <ClInclude Include="C:\ForEden\KEIL\ARM\PACK\Keil\STM32F4xx_DFP\2.6.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f410tx.h" />
-    <ClInclude Include="C:\ForEden\KEIL\ARM\PACK\Keil\STM32F4xx_DFP\2.6.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f411xe.h" />
-    <ClInclude Include="C:\ForEden\KEIL\ARM\PACK\Keil\STM32F4xx_DFP\2.6.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f415xx.h" />
-    <ClInclude Include="C:\ForEden\KEIL\ARM\PACK\Keil\STM32F4xx_DFP\2.6.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f417xx.h" />
-    <ClInclude Include="C:\ForEden\KEIL\ARM\PACK\Keil\STM32F4xx_DFP\2.6.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f427xx.h" />
-    <ClInclude Include="C:\ForEden\KEIL\ARM\PACK\Keil\STM32F4xx_DFP\2.6.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f429xx.h" />
-    <ClInclude Include="C:\ForEden\KEIL\ARM\PACK\Keil\STM32F4xx_DFP\2.6.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f437xx.h" />
-    <ClInclude Include="C:\ForEden\KEIL\ARM\PACK\Keil\STM32F4xx_DFP\2.6.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f439xx.h" />
-    <ClInclude Include="C:\ForEden\KEIL\ARM\PACK\Keil\STM32F4xx_DFP\2.6.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f446xx.h" />
-    <ClInclude Include="C:\ForEden\KEIL\ARM\PACK\Keil\STM32F4xx_DFP\2.6.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f469xx.h" />
-    <ClInclude Include="C:\ForEden\KEIL\ARM\PACK\Keil\STM32F4xx_DFP\2.6.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f479xx.h" />
-    <ClInclude Include="C:\Program Files (x86)\Sysprogs\VisualGDB\builtins_ia32.h" />
-    <ClInclude Include="C:\Program Files (x86)\Sysprogs\VisualGDB\gcc_compat.h" />
     <None Include="mcu.props" />
     <None Include="..\..\..\readme.txt" />
     <ClInclude Include="$(BSP_ROOT)\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h" />
-    <None Include="Experiment_14_DebugTool_USMART-Debug.vgdbsettings" />
-    <None Include="Experiment_14_DebugTool_USMART-Release.vgdbsettings" />
+    <None Include="Experiment_15_RTC-Debug.vgdbsettings" />
+    <None Include="Experiment_15_RTC-Release.vgdbsettings" />
     <None Include="MCU.xml" />
   </ItemGroup>
 </Project>

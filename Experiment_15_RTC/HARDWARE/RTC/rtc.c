@@ -83,8 +83,8 @@ u8 My_RTC_Init(void)
     RTC_InitStructure.RTC_HourFormat   = RTC_HourFormat_24;//RTC设置为,24小时格式
     RTC_Init(&RTC_InitStructure);
  
-		RTC_Set_Time(23,59,56,RTC_H12_AM);	//设置时间
-		RTC_Set_Date(14,5,5,1);		//设置日期
+		RTC_Set_Time(18,29,56,RTC_H12_AM);	//设置时间
+		RTC_Set_Date(21,01,22,1);		//设置日期
 	 
 		RTC_WriteBackupRegister(RTC_BKP_DR0,0x5050);	//标记已经初始化过了
 	} 

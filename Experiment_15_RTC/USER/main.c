@@ -36,8 +36,8 @@ int main(void)
 	POINT_COLOR=RED;
 	LCD_ShowString(30,50,200,16,16,"Explorer STM32F4");	
 	LCD_ShowString(30,70,200,16,16,"RTC TEST");	
-	LCD_ShowString(30,90,200,16,16,"ATOM@ALIENTEK");
-	LCD_ShowString(30,110,200,16,16,"2014/5/5");	
+	LCD_ShowString(30,90,200,16,16,"XiaohuiDong");
+	LCD_ShowString(30,110,200,16,16,"2021/01/22");	
   	while(1) 
 	{		
 		t++;
