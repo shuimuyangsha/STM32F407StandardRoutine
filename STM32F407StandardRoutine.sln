@@ -97,6 +97,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Experiment_20_LightSensor",
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Experiment_23_DMA_DirectMemoryAccess", "Experiment_23_DMA_DirectMemoryAccess\Project\VS\Experiment_23_DMA_DirectMemoryAccess\Experiment_23_DMA_DirectMemoryAccess.vcxproj", "{7DF92433-CDFC-42AE-B4EF-E82A3DE10ED8}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Experiment_45_VideoPlayer", "Experiment_45_VideoPlayer\Project\VS\Experiment_45_VideoPlayer\Experiment_45_VideoPlayer.vcxproj", "{35B4138E-C7D6-464A-924A-02C9CB834FE5}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Experiment_46_1_FPU_Test_OpenFPU", "Experiment_46_FPU_Test_JuliaFractal\Experiment_46_1_FPU_Test_OpenFPU\Project\VS\Experiment_46_1_FPU_Test_OpenFPU\Experiment_46_1_FPU_Test_OpenFPU.vcxproj", "{1E4AEA34-2E7F-479E-B333-642DD9FFE853}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|VisualGDB = Debug|VisualGDB
@@ -275,6 +279,14 @@ Global
 		{7DF92433-CDFC-42AE-B4EF-E82A3DE10ED8}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
 		{7DF92433-CDFC-42AE-B4EF-E82A3DE10ED8}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
 		{7DF92433-CDFC-42AE-B4EF-E82A3DE10ED8}.Release|VisualGDB.Build.0 = Release|VisualGDB
+		{35B4138E-C7D6-464A-924A-02C9CB834FE5}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{35B4138E-C7D6-464A-924A-02C9CB834FE5}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{35B4138E-C7D6-464A-924A-02C9CB834FE5}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{35B4138E-C7D6-464A-924A-02C9CB834FE5}.Release|VisualGDB.Build.0 = Release|VisualGDB
+		{1E4AEA34-2E7F-479E-B333-642DD9FFE853}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{1E4AEA34-2E7F-479E-B333-642DD9FFE853}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{1E4AEA34-2E7F-479E-B333-642DD9FFE853}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{1E4AEA34-2E7F-479E-B333-642DD9FFE853}.Release|VisualGDB.Build.0 = Release|VisualGDB
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

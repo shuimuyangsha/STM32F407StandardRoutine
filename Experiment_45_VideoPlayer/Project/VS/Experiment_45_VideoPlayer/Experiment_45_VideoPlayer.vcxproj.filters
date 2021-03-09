@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{324e8294-2029-4f80-b4a3-6b073acc3cf5}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header files">
+      <UniqueIdentifier>{57385e01-619a-43ba-98d9-f80d4d75b33e}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource files">
+      <UniqueIdentifier>{e67c1dd0-e029-4bf8-96bf-76d7d93f6cc9}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Source files\USER">
+      <UniqueIdentifier>{d3e17506-4588-4871-b25f-9708b28af0c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\HARDWARE">
+      <UniqueIdentifier>{e02796c4-b9d7-481c-80b5-b137456257c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\SYSTEM">
+      <UniqueIdentifier>{8acb4daf-91af-457c-bb01-81a20456ced9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\CORE">
+      <UniqueIdentifier>{2ee65fc0-7d60-4711-89a0-4857efa50eb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\FWLIB">
+      <UniqueIdentifier>{33becd6f-8a5e-4a7b-852c-4028cdbcdcd9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\MALLOC">
+      <UniqueIdentifier>{61217c2b-ee24-48a4-a0ef-5e773a528241}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\USMART">
+      <UniqueIdentifier>{968a87e3-df6d-4294-b831-9b6c0bfabffc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\FATFS">
+      <UniqueIdentifier>{f500854c-b56e-4933-a46d-9b3ada60e79f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\TEXT">
+      <UniqueIdentifier>{c70d2612-f002-4df3-b8fc-7dff836218ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\AUDIOCODEC">
+      <UniqueIdentifier>{31dd2c7d-568e-4e50-8070-919ad628237d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\APP">
+      <UniqueIdentifier>{0686064e-c46e-41bf-8f51-06b2d7a5229f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\MJPEG">
+      <UniqueIdentifier>{29feaa02-253f-40b4-a72b-21f765acae78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\README">
+      <UniqueIdentifier>{07543aa6-63ff-436a-87ad-2e9cb640cbd6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files">
+      <UniqueIdentifier>{d28ca491-7ea3-4846-82d3-94031ae0869f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\USER">
+      <UniqueIdentifier>{8b10b7fa-4324-41a1-863d-78eaa64b019d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\HARDWARE">
+      <UniqueIdentifier>{78120715-c700-4534-ad21-9729126db1c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\SYSTEM">
+      <UniqueIdentifier>{d5c2fdeb-b7f3-4438-b5ac-f1277b284c0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\CORE">
+      <UniqueIdentifier>{c80c9703-d424-4812-ba06-2b414ed33078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\FWLIB">
+      <UniqueIdentifier>{149c9b48-0ae3-41fa-9143-e3f66d4a87c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\MALLOC">
+      <UniqueIdentifier>{768de0df-cf0e-48cd-a321-9f7956efa368}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\USMART">
+      <UniqueIdentifier>{4de84d28-11a2-4d36-bee3-dc3f4993f5a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\FATFS">
+      <UniqueIdentifier>{4d4f5659-f419-41dd-9ba2-1e9a3fb702c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\TEXT">
+      <UniqueIdentifier>{3a22d29b-a4a1-4dc2-9d4f-048daf9abdb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\AUDIOCODEC">
+      <UniqueIdentifier>{a7977e70-725b-4aca-8478-eb62a5bdcb41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\APP">
+      <UniqueIdentifier>{75a3709b-cf39-4d6d-8334-7a0bdb442aa6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\MJPEG">
+      <UniqueIdentifier>{2bad167d-517f-4162-859d-07032355bb43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\README">
+      <UniqueIdentifier>{6187bfa7-6e0b-4352-98e0-d678b422b96f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files">
+      <UniqueIdentifier>{8f6b253a-a822-4880-bee2-10737f8432e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VisualGDB settings">
+      <UniqueIdentifier>{ce793ffd-46ea-4a29-8c50-531b47d26892}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\USER\main.c">
+      <Filter>Source files\USER</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\USER\stm32f4xx_it.c">
+      <Filter>Source files\USER</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\USER\system_stm32f4xx.c">
+      <Filter>Source files\USER</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\HARDWARE\LED\led.c">
+      <Filter>Source files\HARDWARE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\HARDWARE\LCD\lcd.c">
+      <Filter>Source files\HARDWARE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\HARDWARE\KEY\key.c">
+      <Filter>Source files\HARDWARE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\HARDWARE\SPI\spi.c">
+      <Filter>Source files\HARDWARE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\HARDWARE\W25QXX\w25qxx.c">
+      <Filter>Source files\HARDWARE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\HARDWARE\SDIO\sdio_sdcard.c">
+      <Filter>Source files\HARDWARE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\HARDWARE\IIC\myiic.c">
+      <Filter>Source files\HARDWARE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\HARDWARE\24CXX\24cxx.c">
+      <Filter>Source files\HARDWARE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\HARDWARE\I2S\i2s.c">
+      <Filter>Source files\HARDWARE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\HARDWARE\WM8978\wm8978.c">
+      <Filter>Source files\HARDWARE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\HARDWARE\TIMER\timer.c">
+      <Filter>Source files\HARDWARE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SYSTEM\delay\delay.c">
+      <Filter>Source files\SYSTEM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SYSTEM\sys\sys.c">
+      <Filter>Source files\SYSTEM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SYSTEM\usart\usart.c">
+      <Filter>Source files\SYSTEM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\CORE\startup_stm32f40_41xxx.s">
+      <Filter>Source files\CORE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\FWLIB\src\misc.c">
+      <Filter>Source files\FWLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\FWLIB\src\stm32f4xx_gpio.c">
+      <Filter>Source files\FWLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\FWLIB\src\stm32f4xx_fsmc.c">
+      <Filter>Source files\FWLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\FWLIB\src\stm32f4xx_rcc.c">
+      <Filter>Source files\FWLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\FWLIB\src\stm32f4xx_usart.c">
+      <Filter>Source files\FWLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\FWLIB\src\stm32f4xx_tim.c">
+      <Filter>Source files\FWLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\FWLIB\src\stm32f4xx_syscfg.c">
+      <Filter>Source files\FWLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\FWLIB\src\stm32f4xx_spi.c">
+      <Filter>Source files\FWLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\FWLIB\src\stm32f4xx_sdio.c">
+      <Filter>Source files\FWLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\FWLIB\src\stm32f4xx_dma.c">
+      <Filter>Source files\FWLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MALLOC\malloc.c">
+      <Filter>Source files\MALLOC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\USMART\usmart.c">
+      <Filter>Source files\USMART</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\USMART\usmart_config.c">
+      <Filter>Source files\USMART</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\USMART\usmart_str.c">
+      <Filter>Source files\USMART</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\FATFS\src\diskio.c">
+      <Filter>Source files\FATFS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\FATFS\src\ff.c">
+      <Filter>Source files\FATFS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\FATFS\exfuns\exfuns.c">
+      <Filter>Source files\FATFS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\FATFS\exfuns\fattester.c">
+      <Filter>Source files\FATFS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\FATFS\exfuns\mycc936.c">
+      <Filter>Source files\FATFS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\TEXT\fontupd.c">
+      <Filter>Source files\TEXT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\TEXT\text.c">
+      <Filter>Source files\TEXT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\AUDIOCODEC\wav\wavplay.c">
+      <Filter>Source files\AUDIOCODEC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\APP\audioplay.c">
+      <Filter>Source files\APP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\APP\videoplayer.c">
+      <Filter>Source files\APP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MJPEG\avi.c">
+      <Filter>Source files\MJPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MJPEG\mjpeg.c">
+      <Filter>Source files\MJPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MJPEG\JPEG\jaricom.c">
+      <Filter>Source files\MJPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MJPEG\JPEG\jcomapi.c">
+      <Filter>Source files\MJPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MJPEG\JPEG\jutils.c">
+      <Filter>Source files\MJPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MJPEG\JPEG\jerror.c">
+      <Filter>Source files\MJPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MJPEG\JPEG\jmemmgr.c">
+      <Filter>Source files\MJPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MJPEG\JPEG\jdapimin.c">
+      <Filter>Source files\MJPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MJPEG\JPEG\jdapistd.c">
+      <Filter>Source files\MJPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MJPEG\JPEG\jdarith.c">
+      <Filter>Source files\MJPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MJPEG\JPEG\jdmaster.c">
+      <Filter>Source files\MJPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MJPEG\JPEG\jdinput.c">
+      <Filter>Source files\MJPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MJPEG\JPEG\jdmarker.c">
+      <Filter>Source files\MJPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MJPEG\JPEG\jdhuff.c">
+      <Filter>Source files\MJPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MJPEG\JPEG\jdmainct.c">
+      <Filter>Source files\MJPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MJPEG\JPEG\jdcoefct.c">
+      <Filter>Source files\MJPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MJPEG\JPEG\jdpostct.c">
+      <Filter>Source files\MJPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MJPEG\JPEG\jddctmgr.c">
+      <Filter>Source files\MJPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MJPEG\JPEG\jidctfst.c">
+      <Filter>Source files\MJPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MJPEG\JPEG\jidctflt.c">
+      <Filter>Source files\MJPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MJPEG\JPEG\jidctint.c">
+      <Filter>Source files\MJPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MJPEG\JPEG\jdsample.c">
+      <Filter>Source files\MJPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MJPEG\JPEG\jdcolor.c">
+      <Filter>Source files\MJPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MJPEG\JPEG\jquant2.c">
+      <Filter>Source files\MJPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MJPEG\JPEG\jquant1.c">
+      <Filter>Source files\MJPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MJPEG\JPEG\jdmerge.c">
+      <Filter>Source files\MJPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MJPEG\JPEG\jmemnobs.c">
+      <Filter>Source files\MJPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MJPEG\JPEG\wrppm.c">
+      <Filter>Source files\MJPEG</Filter>
+    </ClCompile>
+    <None Include="mcu.props">
+      <Filter>Source files\Device-specific files</Filter>
+    </None>
+    <None Include="..\..\..\readme.txt">
+      <Filter>Header files\README</Filter>
+    </None>
+    <ClInclude Include="$(BSP_ROOT)\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <None Include="Experiment_45_VideoPlayer-Debug.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="Experiment_45_VideoPlayer-Release.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="MCU.xml">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+  </ItemGroup>
+</Project>
